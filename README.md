@@ -43,7 +43,7 @@
 
        ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
- ## 4) Mapp `SLO Simply Smarter` Dashboard with SLO
+ ## 4) Mapp `SLO Simply Smarter` Dashboard with `SLO Smarter`
  
  For each SLO tile, mapp SLO Smarter and period
  
@@ -65,7 +65,7 @@
        
 ![image](https://user-images.githubusercontent.com/40337213/210246167-71c63329-11f5-4f0b-9ba9-98c4485be86b.png)
 
-## 5) Mapp `SLO Resource Optimization` Dashboard with SLO
+## 5) Mapp `SLO Resource Optimization` Dashboard with `SLO Optimization`
 
 `Memory`
 
