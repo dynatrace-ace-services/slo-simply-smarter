@@ -1,4 +1,4 @@
-# SLO Simply Smarter
+# SLO Simply Smarter & SLO Resource Optimization
 
 ## 1) Apply best practices Host Group and Management Zone
 
