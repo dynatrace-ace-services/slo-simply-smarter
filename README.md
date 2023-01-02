@@ -4,7 +4,7 @@
 
 - [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 
-## 2) Import Dashboard **Dynatrace: Simply Smarter**
+## 2) Import Dashboard Dynatrace: Simply Smarter
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
  Prerequisite : create your [token](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
  
