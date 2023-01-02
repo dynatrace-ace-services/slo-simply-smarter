@@ -1,6 +1,6 @@
 # SLO Simply Smarter & SLO Resource Optimization
 
-## 1) Prerequisite : Host Group and Management Zone best practices
+## 1) Prerequisite : `Host Group` and `Management Zone` best practices
 
 - [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 
