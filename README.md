@@ -7,7 +7,8 @@
 ## 2) Import Dynatrace: Simply Smarter
  - [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
  ![image](https://user-images.githubusercontent.com/40337213/210232428-7de19b44-579a-4979-9e4e-6b9ef61bcc7a.png)
-
+ - Possibly to import manually from [here](https://github.com/JLLormeau/dynatrace_template_fr)
+ You have to recreate manually the id mapping. 
 ## 3) Import SLO: Simply Smarter
  - Use [monaco](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/) (with export NEW_CLI=1)
 
