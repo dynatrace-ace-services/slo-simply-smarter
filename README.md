@@ -5,10 +5,9 @@
 - [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 
 ## 2) Import Dynatrace: Simply Smarter
- - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)  
+ - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
  Prerequisite : create your [token](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
  
-       begin
        use your *tenant** and **token** (don't care with Source)
        connect
        deploy 
