@@ -1,0 +1,33 @@
+{
+ "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___application_performance",
+ "denominatorValue": 0,
+ "enabled": true,
+ "error": "NONE",
+ "errorBudget": -35.617701230677966,
+ "errorBudgetBurnRate": {
+  "burnRateType": "SLOW",
+  "burnRateValue": 8.429667519181585,
+  "burnRateVisualizationEnabled": true,
+  "fastBurnThreshold": 10,
+  "sloValue": 57.851662404092075
+ },
+ "errorBudgetMetricKey": "func:slo.errorBudget.smarter___application_performance",
+ "evaluatedPercentage": 59.382298769322034,
+ "evaluationType": "AGGREGATE",
+ "filter": "type(\"APPLICATION\")",
+ "metricDenominator": "",
+ "metricExpression": "(100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy())/(builtin:apps.web.actionCount.category:splitBy())",
+ "metricKey": "func:slo.smarter___application_performance",
+ "metricNumerator": "",
+ "metricRate": "",
+ "name": "{{.name}}",
+ "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___application_performance",
+ "numeratorValue": 0,
+ "relatedOpenProblems": 0,
+ "relatedTotalProblems": 26,
+ "status": "FAILURE",
+ "target": 95,
+ "timeframe": "-1w",
+ "useRateMetric": true,
+ "warning": 98
+}

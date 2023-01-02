@@ -1,0 +1,33 @@
+{
+ "burnRateMetricKey": "func:slo.errorBudgetBurnRate.resource_optimization___cpu_usage",
+ "denominatorValue": 0,
+ "enabled": true,
+ "error": "NONE",
+ "errorBudget": -35.840648357642465,
+ "errorBudgetBurnRate": {
+  "burnRateType": "SLOW",
+  "burnRateValue": 1.7186446576725418,
+  "burnRateVisualizationEnabled": true,
+  "fastBurnThreshold": 10,
+  "sloValue": 14.067767116372911
+ },
+ "errorBudgetMetricKey": "func:slo.errorBudget.resource_optimization___cpu_usage",
+ "evaluatedPercentage": 14.159351642357537,
+ "evaluationType": "AGGREGATE",
+ "filter": "",
+ "metricDenominator": "",
+ "metricExpression": "builtin:host.cpu.usage:splitBy()",
+ "metricKey": "func:slo.resource_optimization___cpu_usage",
+ "metricNumerator": "",
+ "metricRate": "",
+ "name": "{{.name}}",
+ "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.resource_optimization___cpu_usage",
+ "numeratorValue": 0,
+ "relatedOpenProblems": 0,
+ "relatedTotalProblems": 37,
+ "status": "FAILURE",
+ "target": 50,
+ "timeframe": "-1w",
+ "useRateMetric": true,
+ "warning": 60
+}

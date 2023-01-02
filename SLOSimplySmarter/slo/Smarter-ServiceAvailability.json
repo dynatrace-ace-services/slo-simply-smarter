@@ -1,0 +1,33 @@
+{
+ "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___service_availability",
+ "denominatorValue": 0,
+ "enabled": true,
+ "error": "NONE",
+ "errorBudget": 4.542691521160762,
+ "errorBudgetBurnRate": {
+  "burnRateType": "NONE",
+  "burnRateValue": 0.0772907422281321,
+  "burnRateVisualizationEnabled": true,
+  "fastBurnThreshold": 10,
+  "sloValue": 99.61354628885934
+ },
+ "errorBudgetMetricKey": "func:slo.errorBudget.smarter___service_availability",
+ "evaluatedPercentage": 99.54269152116076,
+ "evaluationType": "AGGREGATE",
+ "filter": "",
+ "metricDenominator": "",
+ "metricExpression": "(100)*(builtin:service.errors.server.successCount:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy())/(builtin:service.requestCount.server:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")),in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\"))))):splitBy())",
+ "metricKey": "func:slo.smarter___service_availability",
+ "metricNumerator": "",
+ "metricRate": "",
+ "name": "{{.name}}",
+ "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___service_availability",
+ "numeratorValue": 0,
+ "relatedOpenProblems": 0,
+ "relatedTotalProblems": 154,
+ "status": "SUCCESS",
+ "target": 95,
+ "timeframe": "-1w",
+ "useRateMetric": true,
+ "warning": 98
+}

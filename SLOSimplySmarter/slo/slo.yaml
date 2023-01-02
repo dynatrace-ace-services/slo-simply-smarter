@@ -1,0 +1,31 @@
+config:
+- Optimization-CPUUsage: Optimization-CPUUsage.json
+- Optimization-DiskUsage: Optimization-DiskUsage.json
+- Optimization-MemoryUsage: Optimization-MemoryUsage.json
+- Smarter-ApplicationPerformance: Smarter-ApplicationPerformance.json
+- Smarter-BrowserMonitorAvailability: Smarter-BrowserMonitorAvailability.json
+- Smarter-DatabasePerformance: Smarter-DatabasePerformance.json
+- Smarter-DatabaseSuccessRate: Smarter-DatabaseSuccessRate.json
+- Smarter-HttpMonitorAvailability: Smarter-HttpMonitorAvailability.json
+- Smarter-ServiceAvailability: Smarter-ServiceAvailability.json
+- Smarter-ServicePerformance: Smarter-ServicePerformance.json
+Optimization-CPUUsage:
+- name: Optimization - CPU Usage
+Optimization-DiskUsage:
+- name: Optimization - Disk Usage
+Optimization-MemoryUsage:
+- name: Optimization - Memory Usage
+Smarter-ApplicationPerformance:
+- name: Smarter - Application Performance
+Smarter-BrowserMonitorAvailability:
+- name: Smarter - Browser Monitor Availability
+Smarter-DatabasePerformance:
+- name: Smarter - Database Performance
+Smarter-DatabaseSuccessRate:
+- name: Smarter - Database Success Rate
+Smarter-HttpMonitorAvailability:
+- name: Smarter - Http Monitor Availability
+Smarter-ServiceAvailability:
+- name: Smarter - Service Availability
+Smarter-ServicePerformance:
+- name: Smarter - Service Performance

@@ -1,0 +1,33 @@
+{
+ "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___database_performance",
+ "denominatorValue": 0,
+ "enabled": true,
+ "error": "NONE",
+ "errorBudget": 2.0832078041433135,
+ "errorBudgetBurnRate": {
+  "burnRateType": "NONE",
+  "burnRateValue": 0.6580477547540795,
+  "burnRateVisualizationEnabled": true,
+  "fastBurnThreshold": 10,
+  "sloValue": 96.7097612262296
+ },
+ "errorBudgetMetricKey": "func:slo.errorBudget.smarter___database_performance",
+ "evaluatedPercentage": 97.08320780414331,
+ "evaluationType": "AGGREGATE",
+ "filter": "",
+ "metricDenominator": "",
+ "metricExpression": "((builtin:service.response.time:avg:toUnit(MicroSecond,MilliSecond):filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):partition(\"perf\",value(\"good\",lt(100))):splitBy():count:default(0))/(builtin:service.response.time:avg:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy():count)*(100))",
+ "metricKey": "func:slo.smarter___database_performance",
+ "metricNumerator": "",
+ "metricRate": "",
+ "name": "{{.name}}",
+ "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___database_performance",
+ "numeratorValue": 0,
+ "relatedOpenProblems": 0,
+ "relatedTotalProblems": 77,
+ "status": "WARNING",
+ "target": 95,
+ "timeframe": "-1w",
+ "useRateMetric": true,
+ "warning": 98
+}
