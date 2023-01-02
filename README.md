@@ -6,10 +6,10 @@
 
 ## 2) Import Dynatrace: Simply Smarter
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)  
- 
+ Prerequisite : create your [token](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
  
        begin
-       use your *tenant** and **[token](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)** (don't care with Source)
+       use your *tenant** and **token** (don't care with Source)
        connect
        deploy 
        .../ALL
