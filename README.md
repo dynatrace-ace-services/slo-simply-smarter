@@ -25,15 +25,19 @@
 ## 3) Import SLO: Simply Smarter
  - Use [monaco](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/) (with export NEW_CLI=1)
  
+       *installation*
        git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
        cd slo-simply-smarter
        wget https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/latest/download/monaco-linux-amd64
        mv monaco-linux-amd64 monaco
        chmod +x monaco
+       
+       *varaiables*
        export NEW_CLI=1
        export MyTenant=abcd123.live.dynatrace.com (without https://...)
        export MyToken=xxxx1234yyyy1234
        
+       *deploy*
        ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
  ## 4) Mapp Dashboards with SLO
