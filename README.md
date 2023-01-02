@@ -63,7 +63,24 @@
     Smarter - Database Performance => 1w, 1M and 1y
     Smarter - Database Success Rate => 1w, 1M and 1y
        
-![image](https://user-images.githubusercontent.com/40337213/210246069-13af8d36-b026-42ab-acae-8503990677f9.png)
+![image](https://user-images.githubusercontent.com/40337213/210246167-71c63329-11f5-4f0b-9ba9-98c4485be86b.png)
+
+## 5) Mapp SLO Resource Optimization Dashboard with SLO
+
+`Memory`
+
+    Optimization - Memory Usage => 1w, 1M and 1y
+    
+`CPU`
+
+    Optimization - CPU Usage => 1w, 1M and 1y
+    
+`Disk`
+
+    Optimization - Disk Usage => 1w, 1M and 1y    
+
+![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
+     
   
 
     
