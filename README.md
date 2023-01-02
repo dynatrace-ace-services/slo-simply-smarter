@@ -22,7 +22,7 @@
  ![image](https://user-images.githubusercontent.com/40337213/210232428-7de19b44-579a-4979-9e4e-6b9ef61bcc7a.png)  
  - For OffLine environment, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
-## 3) Import template SLO
+## 3) Import SLO template
  - Use [monaco](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/)
  
  `installation`
