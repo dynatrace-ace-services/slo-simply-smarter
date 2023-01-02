@@ -8,6 +8,7 @@
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
  Prerequisite : create your [token](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
  
+       https://dynatrace.github.io/BizOpsConfigurator/index.html#begin
        use your *tenant** and **token** (don't care with Source)
        connect
        deploy 
