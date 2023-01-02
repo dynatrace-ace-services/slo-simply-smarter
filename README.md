@@ -43,5 +43,33 @@
 
        ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
- ## 4) Mapp Dashboards with SLO
+ ## 4) Mapp SLO Simply Smarter Dashboard with SLO
+ 
+ For each SLO tile, mapp SLO Smarter and period
+ 
+ `Application`
+ 
+    Smarter - Application Performance => 1w, 1M and 1y
+    Smarter - Browser Monitor Availability => 1w, 1M and 1y
+    Smarter - HTTP Monitor Availability => 1w, 1M and 1y
+    
+`Webservice and Webrequest`
+ 
+    Smarter - Service Performance => 1w, 1M and 1y
+    Smarter - Service Availability => 1w, 1M and 1y
+ 
+`Database`
+ 
+    Smarter - Database Performance => 1w, 1M and 1y
+    Smarter - Database Success Rate => 1w, 1M and 1y
+       
+![image](https://user-images.githubusercontent.com/40337213/210246069-13af8d36-b026-42ab-acae-8503990677f9.png)
+  
+
+    
+    
+ 
+ 
+ 
+
   
