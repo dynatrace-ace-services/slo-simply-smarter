@@ -27,6 +27,9 @@
 
        git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
        cd slo-simply-smarter
+       wget https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/latest/download/monaco-linux-amd64
+       mv monaco-linux-amd64 monaco
+       chmod +x monaco
        export NEW_CLI=1
        export MyTenant={your-environment-id}.live.dynatrace.com or {your-domain}/e/{your-environment-id}
        export MyToken=yyyy
