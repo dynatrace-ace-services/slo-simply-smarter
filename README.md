@@ -4,9 +4,25 @@
 
 - [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 
+## 2) Create `APi-Token` :
+ 
+ Prerequisi for BiZops ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))
+ - Access problem and event feed, metrics, and topology
+ - Read configuration 
+ - Write configuration
+ - User sessions 
+ - Read metrics
+ - Write metrics
+ - Ingest Metrics
+ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/configuration/configTypes_tokenPermissions))
+ - Read SLO
+ - Write SLO
+ 
+  ![image](https://user-images.githubusercontent.com/40337213/210615861-e34ab003-df23-455f-9513-2d1ac63a4759.png)
+
+
 ## 2) Import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
- Prerequisite : create your [token](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
  
        https://dynatrace.github.io/BizOpsConfigurator/index.html#begin
        use your *tenant** and **token** (don't care with Source)
@@ -45,7 +61,8 @@
        
  ## 4) Mapp `SLO Simply Smarter` Dashboard with `SLO Smarter`
  
- For each SLO tile, mapp SLO Smarter and period
+ For each SLO tile, mapp SLO Smarter and period  
+ Set the period -1M and -1y manually for all the SLOs (by default -1w) 
  
  `Application`
  
