@@ -13,7 +13,8 @@ Prerequisi for BiZops ([detail](https://dynatrace.github.io/BizOpsConfigurator/i
  - User sessions 
  - Read metrics
  - Write metrics
- - Ingest Metrics
+ - Ingest Metrics  
+ 
 Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/configuration/configTypes_tokenPermissions))  
  - Read SLO
  - Write SLO
