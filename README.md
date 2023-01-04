@@ -6,7 +6,7 @@
 
 ## 2) Create `APi-Token` :
  
- Prerequisi for BiZops ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))
+ Prerequisi for BiZops ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
  - Access problem and event feed, metrics, and topology
  - Read configuration 
  - Write configuration
@@ -14,7 +14,7 @@
  - Read metrics
  - Write metrics
  - Ingest Metrics
- Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/configuration/configTypes_tokenPermissions))
+ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/configuration/configTypes_tokenPermissions))  
  - Read SLO
  - Write SLO
  
