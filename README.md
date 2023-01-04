@@ -4,7 +4,7 @@
 
 - [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 
-## 2) Create `APi-Token` :
+## 2) Create an `APi-Token` with these scope :
  
 Prerequisi for BiZops ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
  - Access problem and event feed, metrics, and topology
