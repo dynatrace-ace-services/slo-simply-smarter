@@ -141,7 +141,7 @@ def getdashboard(TENANT, TOKEN):
                     if SLO_target[i] != '':
                         data=re.sub(SLO_source[i], SLO_target[i], data)
 
-                print(dashboard['name'],dashboard['id'],data)
+                print(dashboard['name'],dashboard['id'])
                 putDynatraceAPI(uri,json.loads(data))
                 deploy_dash=True
 
