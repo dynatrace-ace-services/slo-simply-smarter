@@ -60,10 +60,12 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
 
        ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
- ## 4) Mapp `SLO Simply Smarter` Dashboard with `SLO Smarter`
+ ## 4) Mapp `SLO Simply Smarter` and `SLO Resource Optimization` with SLO Smarter  
  
- For each SLO tile, mapp SLO Smarter and period  
- Set the period -1M and -1y manually for all the SLOs (by default -1w) 
+ # Manually  
+ 
+ `SLO Simply Smarter`: for each SLO tile, mapp SLO Smarter and period  
+ Set the period -1M and -1y manually for all the SLOs (by default -1w)  
  
  `Application`
  
@@ -81,9 +83,9 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
     Smarter - Database Performance => 1w, 1M and 1y
     Smarter - Database Success Rate => 1w, 1M and 1y
        
-![image](https://user-images.githubusercontent.com/40337213/210246167-71c63329-11f5-4f0b-9ba9-98c4485be86b.png)
+![image](https://user-images.githubusercontent.com/40337213/210246167-71c63329-11f5-4f0b-9ba9-98c4485be86b.png)  
 
-## 5) Mapp `SLO Resource Optimization` Dashboard with `SLO Optimization`
+`SLO Resource Optimization` : for each SLO tile, mapp SLO Smarter and period  
 
 `Memory`
 
@@ -98,9 +100,13 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
     Optimization - Disk Usage => 1w, 1M and 1y    
 
 ![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
-     
-  
+      
 
+ # OR Automatically with python3.x
+ 
+      export MyTenant=abcd123.live.dynatrace.com (without https://...)
+      export MyToken=xxxx1234yyyy1234
+      python3 Mapping_SLO_Simply_Smarter.py
     
     
  
