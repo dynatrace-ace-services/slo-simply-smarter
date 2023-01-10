@@ -8,8 +8,8 @@ import re
 ##################################
 ### Environment saas
 ##################################
-Tenant="https://"+str(os.getenv('MyTenant3'))
-Token=os.getenv('MyToken3')
+Tenant="https://"+str(os.getenv('MyTenant'))
+Token=os.getenv('MyToken')
 
 ##################################
 ## API
