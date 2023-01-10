@@ -61,8 +61,11 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
        ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
  ## 4) Mapp `SLO Simply Smarter` and `SLO Resource Optimization` with SLO Smarter  
+ 2 options :
+ - manually 
+ - or automatic
  
- # Manually  
+ # Manually mapping
  
  `SLO Simply Smarter`: for each SLO tile, mapp SLO Smarter and period  
  Set the period -1M and -1y manually for all the SLOs (by default -1w)  
@@ -102,7 +105,7 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
 ![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
       
 
- # OR Automatically with python3.x  
+ ## OR automatic mapping with python3.x  
  SLO are uploaded if missing (no need to deploy with monaco) and the mapping between SLO and Dashboard is automatic  
  
       export MyTenant=abcd123.live.dynatrace.com (without https://...)
