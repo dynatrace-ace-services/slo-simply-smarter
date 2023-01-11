@@ -21,8 +21,30 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
  
   ![image](https://user-images.githubusercontent.com/40337213/210615861-e34ab003-df23-455f-9513-2d1ac63a4759.png)
 
+## 3) Automatic installation and update with `script python3.x`
+Prerequisite : requests installed 
+ 
+    pip install requests
+ 
+ 2 options :
+ - Deploy or update Dashboards (export Deploy=`ALL`)
+ - Deploy SLO with mapping SLO and Dashboards  (export Deploy=`SLO`, need Bizops )
+  
+       git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
+       cd slo-simply-smarter
+     
+       export MyTenant=abcd123.live.dynatrace.com (without https://...)
+       export MyToken=xxxx1234yyyy1234
+       export Deploy=ALL(Default)|SLO
+       python3 Deploy_and_Update_SLO_Simply_Smarter.py
+    
+  ![image](https://user-images.githubusercontent.com/40337213/211681761-736ab18d-46ca-4488-9e14-bc8872af4e38.png)
 
-## 2) `BizOpsConfigurator` : import Dashboard `Dynatrace: Simply Smarter`
+
+# Installation without `Python`
+Others option to install `SLO Simply Smarter`if you don't have a runtime python 
+
+## 4) `BizOpsConfigurator` : import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
 
  
@@ -103,22 +125,8 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
 ![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
       
  ## Automatic mapping  
- With Python3.x : see paragraph below
+ With Python3.x : see paragraph Automatic installation with `script python3.x`
  
- # Automatic installation with `script python3.x`
- 2 options :
- - Deploy or update Dashboards (export Deploy=`ALL`)
- - Deploy SLO with mapping SLO and Dashboards  (export Deploy=`SLO`, need Bizops )
-  
-       git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
-       cd slo-simply-smarter
-     
-       export MyTenant=abcd123.live.dynatrace.com (without https://...)
-       export MyToken=xxxx1234yyyy1234
-       export Deploy=ALL(Default)|SLO
-       python3 Deploy_and_Update_SLO_Simply_Smarter.py
-    
-  ![image](https://user-images.githubusercontent.com/40337213/211681761-736ab18d-46ca-4488-9e14-bc8872af4e38.png)
 
  
  
