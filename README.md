@@ -48,7 +48,7 @@ Prerequisite : requests installed
 ---
 
 # Installation without `Python`
-If you can't install `SLO Simply Smarter` with python script, you can follow this install workflow with Bizops and Monaco
+If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton with Bizops and Monaco
 
 ## step1) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
@@ -138,5 +138,5 @@ If you can't install `SLO Simply Smarter` with python script, you can follow thi
 ---
 
 # Installation for  `OffLine` environment
-If you can't install `SLO Simply Smarter` with python script or  with Bizops or Monaco, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
+If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
