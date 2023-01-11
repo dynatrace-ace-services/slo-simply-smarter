@@ -126,7 +126,7 @@ Others option to install `SLO Simply Smarter`if you don't have a runtime python
       
  ## Automatic mapping  
  With Python3.x : see paragraph Automatic installation with `script python3.x`
- 
+ option `Deploy=SLO`
 
  
  
