@@ -27,7 +27,7 @@ Prerequisite : requests installed
     pip install requests
  
  2 options :  
- - Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )  
+ - Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value = full update )  
  - Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updated )  
  
  You can use this script if you want install or update `SLO Simply Smarter`.  
