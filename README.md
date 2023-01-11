@@ -28,7 +28,7 @@ Prerequisite : requests installed
  
  2 options :  
  - Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )  
- - Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updating )  
+ - Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updated )  
  
  You can use this script if you want install or update `SLO Simply Smarter`.  
  Have a look to the update [here](https://github.com/JLLormeau/dynatrace_template_fr#readme)
