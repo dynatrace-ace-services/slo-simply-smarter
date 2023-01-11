@@ -20,10 +20,10 @@
   (*) optionnel for BizOps only ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
 
   
-## 3) Automatic installation and update with `script python3.x`
+## 3) Automatic installation and update with `script python`
 Prerequisite : requests installed 
  
-    python 3.6 or more
+    python 3.6+
     pip install requests
  
  2 options :  
@@ -129,7 +129,7 @@ Others option to install `SLO Simply Smarter`if you don't have a runtime python
 ![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
       
  ## Automatic mapping  
- With Python3.x : see paragraph Automatic installation with `script python3.x`
+ With Python : see paragraph Automatic installation with `script python`
  option `Deploy=SLO`
 
  
