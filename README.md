@@ -6,7 +6,7 @@
 
 ## 2) Create an `APi-Token` with this scope :
  
-Prerequisi for BiZops ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
+Prerequisi for BizOps ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
  - Access problem and event feed, metrics, and topology
  - Read configuration 
  - Write configuration
@@ -47,7 +47,9 @@ Prerequisite : requests installed
 # Installation without `Python`
 Others option to install `SLO Simply Smarter`if you don't have a runtime python 
 
-## 4) `BizOpsConfigurator` : import Dashboard `Dynatrace: Simply Smarter`
+---
+
+## 4) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
 
  
