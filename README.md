@@ -53,18 +53,18 @@ Prerequisite : requests installed
 If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton which uses Bizops and Monaco
 
 ## step1) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
- - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
+For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
 
  
-       https://dynatrace.github.io/BizOpsConfigurator/index.html#begin
-       use your *tenant** and **token** (don't care with Source)
-       connect
-       deploy 
-       .../ALL
-       Dynatrace_Simply Smarter
-       next
-       advanced (you can define the owenr = admin)
-       done
+    https://dynatrace.github.io/BizOpsConfigurator/index.html#begin
+    use your *tenant** and **token** (don't care with Source)
+    connect
+    deploy 
+    .../ALL
+    Dynatrace_Simply Smarter
+    next
+    advanced (you can define the owenr = admin)
+    done
        
  
  ![image](https://user-images.githubusercontent.com/40337213/210232428-7de19b44-579a-4979-9e4e-6b9ef61bcc7a.png)  
