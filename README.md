@@ -105,15 +105,18 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
  ## Automatic mapping  
  With Python3.x : see paragraph below
  
- # Other option : full installation with `script python3.x`  
- SLO are uploaded if missing (no need to deploy with monaco) and the mapping between SLO and Dashboard is automatic  
- 
-      git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
-      cd slo-simply-smarter
-      
-      export MyTenant=abcd123.live.dynatrace.com (without https://...)
-      export MyToken=xxxx1234yyyy1234
-      python3 Mapping_SLO_Simply_Smarter.py
+ # Automatic installation with `script python3.x`
+ 2 options :
+ - Deploy or update Dashboards (export Deploy=ALL)
+ - Deploy SLO with mapping SLO and Dashboards  (export Deploy=SLO)
+  
+       git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
+       cd slo-simply-smarter
+     
+       export MyTenant=abcd123.live.dynatrace.com (without https://...)
+       export MyToken=xxxx1234yyyy1234
+       export Deploy=ALL(Default)|SLO
+       python3 Mapping_SLO_Simply_Smarter.py
     
   ![image](https://user-images.githubusercontent.com/40337213/211681761-736ab18d-46ca-4488-9e14-bc8872af4e38.png)
 
