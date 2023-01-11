@@ -102,7 +102,9 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
 
 ![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
       
-
+ ## Automatic mapping  
+ With Python3.x : see paragraph below
+ 
  # Other option : full installation with `script python3.x`  
  SLO are uploaded if missing (no need to deploy with monaco) and the mapping between SLO and Dashboard is automatic  
  
