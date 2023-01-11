@@ -116,7 +116,7 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
        export MyTenant=abcd123.live.dynatrace.com (without https://...)
        export MyToken=xxxx1234yyyy1234
        export Deploy=ALL(Default)|SLO
-       python3 Mapping_SLO_Simply_Smarter.py
+       python3 Deploy_and_Update_SLO_Simply_Smarter.py
     
   ![image](https://user-images.githubusercontent.com/40337213/211681761-736ab18d-46ca-4488-9e14-bc8872af4e38.png)
 
