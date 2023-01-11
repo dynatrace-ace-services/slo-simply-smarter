@@ -1,4 +1,4 @@
-# SLO Simply Smarter & SLO Resource Optimization
+# SLO Simply Smarter
 
 ## 1) Prerequisite : `Host Group` and `Management Zone` best practices
 
