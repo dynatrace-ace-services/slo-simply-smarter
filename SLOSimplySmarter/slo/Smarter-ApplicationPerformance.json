@@ -16,7 +16,7 @@
  "evaluationType": "AGGREGATE",
  "filter": "type(\"APPLICATION\")",
  "metricDenominator": "",
- "metricExpression": "(100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy())/(builtin:apps.web.actionCount.category:splitBy())",
+ "metricExpression": "builtin:apps.web.apdex.userType:splitBy()*100",
  "metricKey": "func:slo.smarter___application_performance",
  "metricNumerator": "",
  "metricRate": "",
