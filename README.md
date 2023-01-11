@@ -108,7 +108,7 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
  # Automatic installation with `script python3.x`
  2 options :
  - Deploy or update Dashboards (export Deploy=`ALL`)
- - Deploy SLO with mapping SLO and Dashboards  (export Deploy=`SLO`need Bizops )
+ - Deploy SLO with mapping SLO and Dashboards  (export Deploy=`SLO`, need Bizops )
   
        git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
        cd slo-simply-smarter
