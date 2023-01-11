@@ -27,10 +27,10 @@ Prerequisite : requests installed
     pip install requests
  
  2 options :  
- 1- Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )
- 2- Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updating )
+ - Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )  
+ - Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updating )  
  
- You can use this script if you want install `SLO Simply Smarter` or if you want to upate it. 
+ You can use this script if you want install or update `SLO Simply Smarter`.  
  Have a look to the update [here](https://github.com/JLLormeau/dynatrace_template_fr#readme)
   
     git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
