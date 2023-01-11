@@ -42,13 +42,15 @@ Prerequisite : requests installed
     python3 Deploy_and_Update_SLO_Simply_Smarter.py
     
    ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
-   
+  
+ The `SLO simply smarter` is installed 
+ 
 ---
 
 # Installation without `Python`
-Others option to install `SLO Simply Smarter`if you don't have a runtime python 
+If you can't install `SLO Simply Smarter` with python script, you can follow this install workflow with Bizops and Monaco
 
-## 4) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
+## step1) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
 
  
@@ -66,7 +68,7 @@ Others option to install `SLO Simply Smarter`if you don't have a runtime python
  ![image](https://user-images.githubusercontent.com/40337213/210232428-7de19b44-579a-4979-9e4e-6b9ef61bcc7a.png)  
  - For OffLine environment, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
-## 3) `Monaco`Import `SLO template`
+## step2) `Monaco`Import `SLO template`
  - Use [monaco](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/)
  
  `installation`
@@ -87,7 +89,7 @@ Others option to install `SLO Simply Smarter`if you don't have a runtime python
 
     ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
- ## 4) Mapp `SLO Simply Smarter` and `SLO Resource Optimization` with SLO Smarter  
+ ## step3) Mapp `SLO Simply Smarter` and `SLO Resource Optimization` with SLO Smarter  
  
  # Manually mapping
  
@@ -132,4 +134,9 @@ Others option to install `SLO Simply Smarter`if you don't have a runtime python
  With Python : see paragraph Automatic installation with `script python`
  option `Deploy=SLO`
 
+
+---
+
+# Installation for  `OffLine` environment
+If you can't install `SLO Simply Smarter` with python script or  with Bizops or Monaco, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
