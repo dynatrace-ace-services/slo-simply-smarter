@@ -6,7 +6,7 @@ import urllib3
 import re  
 
 ##################################
-### Environment saas
+### Environment Dynatrace
 ##################################
 Tenant="https://"+str(os.getenv('MyTenant3'))
 Token=os.getenv('MyToken3')
@@ -33,7 +33,9 @@ Dashboard_mapping_name={'🏠 Dynatrace: simply smarter':'Dynatrace_simply smart
 ##################################
 ## Others
 ##################################
-owner='admin'
+deploy=os.getenv('Deploy')
+owner=os.getenv('Owner')
+owner_old=''
 
 #disable warning
 urllib3.disable_warnings()
@@ -113,7 +115,7 @@ def putDynatraceAPI(uri, payload):
 ##################################
 ## Get SLO Target
 ##################################
-def getSlo(TENANT, TOKEN):
+def getSLO(TENANT, TOKEN):
     for slo_filter in ['smarter', 'optimization']:
         uri=TENANT+APIslo+'?pageSize=100&sloSelector=text("'+slo_filter+'")&sort=name&timeFrame=CURRENT&demo=false&evaluate=false&enabledSlos=true&showGlobalSlos=true&Api-Token='+TOKEN
 
@@ -142,20 +144,22 @@ def getDashboard(TENANT, TOKEN):
             if Dashboard_target[dashboard['name']] == '':
                 #print(dashboard['name'])
                 Dashboard_target[dashboard['name']]=dashboard['id']
-            if Dashboard_target[dashboard['name']] == '🏠 Dynatrace: simply smarter':
-                owner=dashboard['owner']
-           
+        owner_old=dashboard['owner']
+
+    if owner == '' :
+        owner == owner_old
+
     return()
 
 
 def mappSloDashboard(TENANT, TOKEN):
+    print('\nmapping slo')
     uri=TENANT+APIdashboard+'?tags=smarter&Api-Token='+TOKEN
 
     #print(uri)
     datastore = queryDynatraceAPI(uri)
     #print(datastore)
     dashboards = datastore['dashboards']
-    #print('update dashbaord')
     deploy_dash=False
     for dashboard in dashboards :
             if dashboard['name'] in ['✔ SLO Simply Smarter', '✔ SLO Resource Optimization'] :
@@ -168,18 +172,33 @@ def mappSloDashboard(TENANT, TOKEN):
                     if SLO_target[i] != '':
                         data=re.sub(SLO_source[i], SLO_target[i], data)
 
-                print('mapping slo', dashboard['name'],dashboard['id'])
+                print(' mapping slo for ', dashboard['name'],dashboard['id'])
                 putDynatraceAPI(uri,json.loads(data))
                 deploy_dash=True
 
     if not deploy_dash:
-        print('no dashbaords, import Dynatrace: Simply Smarter')
-    print()
+        print(' no dashbaords, import Dynatrace: Simply Smarter or run this script with Deploy=ALL')
+    
+    return()
+
+def updateSLO(TENANT, TOKEN):
+    print('\nupdate slo')
+    for slo in SLO_target:
+        url='https://raw.githubusercontent.com/dynatrace-ace-services/slo-simply-smarter/main/SLOSimplySmarter/slo/'+slo.replace(' ','')+'.json'
+        req = requests.get(url)
+        payload=req.json()
+        payload['name']=slo
+        payload['id']=SLO_target[slo]
+        
+        print(' update', slo, SLO_target[slo])
+        uri=TENANT+APIslo+'/'+SLO_target[slo]+'?Api-Token='+TOKEN
+        putDynatraceAPI(uri, payload)
+
 
     return()
 
-
 def generateSLO(TENANT, TOKEN):
+    print('\ndeploy slo')
     for slo in SLO_target:
         if SLO_target[slo] == '':
             url='https://raw.githubusercontent.com/dynatrace-ace-services/slo-simply-smarter/main/SLOSimplySmarter/slo/'+slo.replace(' ','')+'.json'
@@ -187,80 +206,86 @@ def generateSLO(TENANT, TOKEN):
             payload=req.json()
             payload['name']=slo
         
-            print('deploy', slo)
+            print(' deploy', slo, SLO_target[slo])
             uri=TENANT+APIslo+'?Api-Token='+TOKEN
             result=postDynatraceAPI(uri, payload)
-    print()
 
     return()
 
+
 def generateDashboard(TENANT, TOKEN):
+    print('\ndeploy dashboards')
     global owner
-    for Dashboard in Dashboard_target:
-        if Dashboard_target[Dashboard] == '':
-            url='https://raw.githubusercontent.com/JLLormeau/dynatrace_template_fr/master/'+Dashboard_mapping_name[Dashboard]
+    if owner == '' :
+        owner = 'admin'
+
+    for dashboard in Dashboard_target:
+        if Dashboard_target[dashboard] == '':
+            url='https://raw.githubusercontent.com/JLLormeau/dynatrace_template_fr/master/'+Dashboard_mapping_name[dashboard]
             req = requests.get(url)
             payload=req.json()
             payload['dashboardMetadata']['owner']=owner
             del payload['id']
     
-            print('deploy', Dashboard)
+            print(' deploy', dashboard, Dashboard_target[dashboard])
             uri=TENANT+APIdashboard+'?Api-Token='+TOKEN
             result=postDynatraceAPI(uri, payload)
-    print()
             
     return()
 
 def mappDashboard(TENANT, TOKEN):
+    global owner
+    print('\nupdate dashboards')
     for dashboard in Dashboard_target: 
             uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
             datastore = queryDynatraceAPI(uri)
             #print(datastore)
+            datastore['dashboardMetadata']['owner']=owner
             data=json.dumps(datastore)
             for i in Dashboard_source:
                 if Dashboard_target[i] != '':
                         data=re.sub(Dashboard_source[i], Dashboard_target[i], data)
-        
-            print('update', dashboard)
+                        
+            print(' update', dashboard, Dashboard_target[dashboard])
             uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
             putDynatraceAPI(uri, json.loads(data))
-    print()
+    print(' => with owner', owner)
             
     return()
 
 ##################################
 ## Main program
 ##################################
-Deploy=os.getenv('Deploy')
-if Deploy != 'SLO' or Deploy != 'slo':
-    Deploy = 'ALL'
-
 print("######## SLO Simply Smarter automatic deployment ")
-print()
-print('Variables :') 
+print('\nvariables') 
 print(' MyTenant', Tenant)
 print(' MyToken', 'dt0c01.'+Token.split('.')[1]+'.*****')
-print(' Deploy', Deploy)
-print()
+print(' Deploy', deploy)
+print(' Owner', owner)
 
 #info dashboard
 getDashboard(Tenant, Token)
 
 #update dashboards
-if Deploy == 'ALL':
+if deploy != 'SLO' and deploy != 'slo' :
     generateDashboard(Tenant, Token)
     getDashboard(Tenant, Token)
     mappDashboard(Tenant, Token)
 
-#update slo
-getSlo(Tenant, Token)
+#validate slo
+getSLO(Tenant, Token)
 generateSLO(Tenant, Token)
-getSlo(Tenant, Token)
+getSLO(Tenant, Token)
 
 #mapping slo dashboards
 mappSloDashboard(Tenant, Token)
 
-print("########")
+#update slo and owner
+if deploy != 'SLO' and deploy != 'slo' :
+    updateSLO(Tenant, Token)
+    
+
+print('\nsimply smarter')
 Home=Tenant+'/#dashboard;id='+Dashboard_target['🏠 Dynatrace: simply smarter']
-print(Home)
+print(' ',Home)
 #################################
