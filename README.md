@@ -40,7 +40,7 @@ Prerequisite : requests installed
        
        python3 Deploy_and_Update_SLO_Simply_Smarter.py
     
-  ![image](https://user-images.githubusercontent.com/40337213/211681761-736ab18d-46ca-4488-9e14-bc8872af4e38.png)
+  ![image](https://user-images.githubusercontent.com/40337213/211926417-dcc48062-1e0a-4845-b26d-d6f1b22af44f.png)
 
 
 # Installation without `Python`
