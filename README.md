@@ -24,7 +24,7 @@ Prerequisi for SLO with monaco ([detail](https://dynatrace-oss.github.io/dynatra
 
 ## 2) Import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
-
+`BizOpsConfigurator`
 
  
        https://dynatrace.github.io/BizOpsConfigurator/index.html#begin
