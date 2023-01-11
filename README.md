@@ -23,6 +23,7 @@
 ## 3) Automatic installation and update with `script python3.x`
 Prerequisite : requests installed 
  
+    python 3.6 or more
     pip install requests
  
  2 options :  
