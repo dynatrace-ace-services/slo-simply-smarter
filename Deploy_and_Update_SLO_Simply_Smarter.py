@@ -261,7 +261,8 @@ print('\nvariables')
 print(' MyTenant', Tenant)
 print(' MyToken', 'dt0c01.'+Token.split('.')[1]+'.*****')
 print(' Deploy', deploy)
-print(' Owner', owner)
+if deploy != 'SLO' and deploy != 'slo' :
+    print(' Owner', owner)
 
 #info dashboard
 getDashboard(Tenant, Token)
