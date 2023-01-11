@@ -43,11 +43,10 @@ Prerequisite : requests installed
     
   ![image](https://user-images.githubusercontent.com/40337213/211926417-dcc48062-1e0a-4845-b26d-d6f1b22af44f.png)
 
+---
 
 # Installation without `Python`
 Others option to install `SLO Simply Smarter`if you don't have a runtime python 
-
----
 
 ## 4) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
