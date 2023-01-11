@@ -30,6 +30,8 @@ Prerequisite : requests installed
  1- Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )
  2- Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updating )
  
+ You can use this script if you want install `SLO Simply Smarter` or if you want to upate it. 
+ Have a look to the update [here](https://github.com/JLLormeau/dynatrace_template_fr#readme)
   
     git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
     cd slo-simply-smarter
@@ -48,7 +50,7 @@ Prerequisite : requests installed
 ---
 
 # Installation without `Python`
-If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton with Bizops and Monaco
+If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton which uses Bizops and Monaco
 
 ## step1) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
  - For Saas and Managed, use the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
@@ -137,6 +139,6 @@ If you can't install `SLO Simply Smarter` with python script, you can follow thi
 
 ---
 
-# Installation for  `OffLine` environment
+# Installation manually for `OffLine` environment
 If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
