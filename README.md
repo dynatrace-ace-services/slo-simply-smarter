@@ -28,7 +28,7 @@ Prerequisite : requests installed
  
  2 options :
  - Deploy or update Dashboards (export Deploy=`ALL`)
- - Deploy SLO with mapping SLO and Dashboards  (export Deploy=`SLO`, need Bizops )
+ - Deploy SLO with mapping SLO and Dashboards  (export Deploy=`SLO`, no update from dashboard and slo - only mapping )
   
        git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
        cd slo-simply-smarter
