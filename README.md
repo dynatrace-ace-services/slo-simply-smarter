@@ -27,18 +27,19 @@ Prerequisite : requests installed
     pip install requests
  
  2 options :  
- - Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )
- - Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updating )
+ 1- Deploy or update SLOs and Dashboards (export Deploy=`ALL` - default value )
+ 2- Mapping SLO with Dashboards  (export Deploy=`SLO`, no dashboard updating )
+ 
   
-       git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
-       cd slo-simply-smarter
+    git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
+    cd slo-simply-smarter
      
-       export MyTenant=abcd123.live.dynatrace.com (without https://...)
-       export MyToken=xxxx1234yyyy1234
-       export Deploy=ALL(Default)|SLO
-       export Owner=MyOwner (optionel - no need to define this user in the UI)
+    export MyTenant=abcd123.live.dynatrace.com (without https://...)
+    export MyToken=xxxx1234yyyy1234
+    export Deploy=ALL(Default)|SLO
+    export Owner=MyOwner (optionel - no need to define this user in the UI)
        
-       python3 Deploy_and_Update_SLO_Simply_Smarter.py
+    python3 Deploy_and_Update_SLO_Simply_Smarter.py
     
   ![image](https://user-images.githubusercontent.com/40337213/211926417-dcc48062-1e0a-4845-b26d-d6f1b22af44f.png)
 
