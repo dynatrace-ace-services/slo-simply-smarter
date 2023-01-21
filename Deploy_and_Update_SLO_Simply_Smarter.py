@@ -34,7 +34,11 @@ Dashboard_mapping_name={'🏠 Dynatrace: simply smarter':'Dynatrace_simply smart
 ## Others
 ##################################
 deploy=os.getenv('Deploy')
+if deploy == None:
+    deploy = 'ALL'
 owner=os.getenv('Owner')
+if owner == None:
+    owner = 'admin'
 owner_old=''
 
 #disable warning
@@ -287,6 +291,6 @@ if deploy != 'SLO' and deploy != 'slo' :
     
 
 print('\nsimply smarter')
-Home=Tenant+'/#dashboard;id='+Dashboard_target['🏠 Dynatrace: simply smarter']
+Home=Tenant+"/#dashboard;id="+Dashboard_target['🏠 Dynatrace: simply smarter']
 print(' ',Home)
 #################################
