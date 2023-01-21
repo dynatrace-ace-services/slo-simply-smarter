@@ -1,6 +1,6 @@
 {
  "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___service_performance",
- "error": "NONE",
+ "enabled": true,
  "errorBudgetBurnRate": {
   "burnRateVisualizationEnabled": true,
   "fastBurnThreshold": 10
