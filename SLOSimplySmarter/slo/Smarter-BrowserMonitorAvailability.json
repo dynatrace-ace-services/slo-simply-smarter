@@ -1,18 +1,11 @@
 {
  "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___browser_monitor_availability",
- "denominatorValue": 0,
  "enabled": true,
- "error": "NONE",
- "errorBudget": 4.983419222140569,
  "errorBudgetBurnRate": {
-  "burnRateType": "NONE",
-  "burnRateValue": 0,
   "burnRateVisualizationEnabled": true,
-  "fastBurnThreshold": 10,
-  "sloValue": 100
+  "fastBurnThreshold": 10
  },
  "errorBudgetMetricKey": "func:slo.errorBudget.smarter___browser_monitor_availability",
- "evaluatedPercentage": 99.98341922214057,
  "evaluationType": "AGGREGATE",
  "filter": "",
  "metricDenominator": "",
@@ -22,10 +15,6 @@
  "metricRate": "",
  "name": "{{.name}}",
  "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___browser_monitor_availability",
- "numeratorValue": 0,
- "relatedOpenProblems": 0,
- "relatedTotalProblems": 0,
- "status": "SUCCESS",
  "target": 95,
  "timeframe": "-1w",
  "useRateMetric": true,
