@@ -245,7 +245,7 @@ def generateDashboard(TENANT, TOKEN):
             req = requests.get(url)
             payload=req.json()
             payload['dashboardMetadata']['owner']=owner
-            del payload['id']
+            payload['id']=Dashboard_target[dashboard]
     
             print(' update', dashboard, Dashboard_target[dashboard])
             uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
