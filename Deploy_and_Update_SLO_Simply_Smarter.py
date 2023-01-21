@@ -240,6 +240,16 @@ def generateDashboard(TENANT, TOKEN):
             print(' deploy', dashboard, Dashboard_target[dashboard])
             uri=TENANT+APIdashboard+'?Api-Token='+TOKEN
             result=postDynatraceAPI(uri, payload)
+        else:
+            url='https://raw.githubusercontent.com/JLLormeau/dynatrace_template_fr/master/'+Dashboard_mapping_name[dashboard]
+            req = requests.get(url)
+            payload=req.json()
+            payload['dashboardMetadata']['owner']=owner
+            del payload['id']
+    
+            print(' update', dashboard, Dashboard_target[dashboard])
+            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
+            result=putDynatraceAPI(uri, payload)
             
     return()
 
