@@ -1,18 +1,12 @@
 {
  "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___application_availability",
- "denominatorValue": 0,
  "enabled": true,
- "error": "NONE",
- "errorBudget": 4.903042226399336,
  "errorBudgetBurnRate": {
   "burnRateType": "NONE",
-  "burnRateValue": 0.05259954085426841,
   "burnRateVisualizationEnabled": true,
-  "fastBurnThreshold": 10,
-  "sloValue": 99.73700229572866
+  "fastBurnThreshold": 10
  },
  "errorBudgetMetricKey": "func:slo.errorBudget.smarter___application_availability",
- "evaluatedPercentage": 99.90304222639934,
  "evaluationType": "AGGREGATE",
  "filter": "",
  "metricDenominator": "",
@@ -22,10 +16,6 @@
  "metricRate": "",
  "name": "{{.name}}",
  "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___application_availability",
- "numeratorValue": 0,
- "relatedOpenProblems": 0,
- "relatedTotalProblems": 10,
- "status": "SUCCESS",
  "target": 95,
  "timeframe": "-1w",
  "useRateMetric": true,
