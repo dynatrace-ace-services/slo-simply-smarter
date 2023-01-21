@@ -9,7 +9,13 @@ import re
 ### Environment Dynatrace
 ##################################
 Tenant="https://"+str(os.getenv('MyTenant'))
+if Tenant == None :
+    print('ERROR : MyTenant is empty')
+    exit()
 Token=os.getenv('MyToken')
+if Token == None :
+    print('ERROR : MyToken is empty')
+    exit()
 
 ##################################
 ## API
