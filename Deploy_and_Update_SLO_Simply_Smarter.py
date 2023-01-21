@@ -247,7 +247,7 @@ def generateDashboard(TENANT, TOKEN):
             payload['dashboardMetadata']['owner']=owner
             payload['id']=Dashboard_target[dashboard]
     
-            print(' update', dashboard, Dashboard_target[dashboard])
+            print(' deploy', dashboard, Dashboard_target[dashboard])
             uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
             result=putDynatraceAPI(uri, payload)
             
