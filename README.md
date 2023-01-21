@@ -1,8 +1,9 @@
 # SLO Simply Smarter
 
-## 1) Prerequisite : `Host Group` and `Management Zone` best practices
+## 1) Prerequisite 
 
-- [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
+- `Host Group` and `Management Zone` best practices with [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
+- `ITSM integration best practices`with [easy ITSM](https://github.com/dynatrace-ace-services/easy-itsm/blob/main/Readme.md)
 
 ## 2) Create an `APi-Token` with this scope :
 
