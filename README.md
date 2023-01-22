@@ -51,7 +51,7 @@ Prerequisite : requests installed
    ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
   
  The `SLO simply smarter` is installed 
- 
+ ---
  With Mission Control, add these two temporary variables from your Mission Control access :  
  
     export Cookie=XXX
