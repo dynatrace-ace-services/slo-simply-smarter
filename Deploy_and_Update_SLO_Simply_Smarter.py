@@ -54,14 +54,13 @@ if Cookie == None:
         'Content-Type': 'application/json; charset=UTF-8'
     }
 else:
+    #'Authorization': 'Api-Token '+Token,
     head = {
         'Accept': 'application/json',
         'Content-Type': 'application/json; charset=UTF-8',
         'X-CSRFToken': CSRF,
-        'Authorization': 'Api-Token '+Token,
         'Cookie': Cookie
     }
-    
 
 ##################################
 ## Generic Dynatrace API
