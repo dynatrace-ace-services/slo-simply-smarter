@@ -1,15 +1,8 @@
 # SLO Simply Smarter
 
-Deployment best practices : https://github.com/dynatrace-ace-services/quickstart-ace-configurator/blob/main/README.md  
-✅ SLO Simply Smarter : https://github.com/dynatrace-ace-services/slo-simply-smarter/blob/main/README.md  
-Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/README.md  
-
-Usefull links:  
-- Youtube  : [From zero to hero in 2 minutes](https://youtu.be/vyabfN9zt8c)  
-- Youtube  : [Full demo - From zero to hero](https://youtu.be/irxN7PJd43M)  
-- Youtube : [SLO for OPS - Boost your Service Desk integration](https://youtu.be/ugauVEjtfWo)  
-- Monaco introduction : [What is Monaco for Dynatrace?](/What-is-Monaco-for-Dynatrace.pdf)  
-- BizOpsConfigurator : [Welcome to Dynatrace BizOps Dashboards](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
+Deployment best practices : https://github.com/dynatrace-ace-services/quickstart-ace-configurator  
+✅ SLO Simply Smarter : https://github.com/dynatrace-ace-services/slo-simply-smarter  
+Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-integration  
 
 ## 1) Prerequisites
 
