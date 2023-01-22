@@ -52,20 +52,7 @@ Prerequisite : requests installed
   
  The `SLO simply smarter` is installed 
  
- ---
- 
- With Mission Control, add these two temporary variables from your Mission Control access :  
- 
-    export Cookie=***
-    export CSRFToken=***
-    
- From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and Cookie like that : 
- ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
 
-    
-    
- 
- 
 ---
 
 # Installation without `Python`
@@ -161,3 +148,15 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
 # Installation manually for `OffLine` environment
 If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
+ ---
+ 
+Coming soon : with Mission Control and Python script: 
+-  add these two temporary variables from your Mission Control access
+- and run the Python script :  
+ 
+    export Cookie=***
+    export CSRFToken=***
+    
+ From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and Cookie like that : 
+ ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
+
