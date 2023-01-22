@@ -150,7 +150,9 @@ If you can't install `SLO Simply Smarter` with python script or with Bizops, fol
  
  ---
  
-Coming soon : with Mission Control and Python script: add these two temporary variables from your Mission Control access and run the Python script:  
+# From Mission Control 
+
+Coming soon : add these two temporary variables from your Mission Control access and run the Python script:  
  
     export Cookie=***
     export CSRFToken=***
