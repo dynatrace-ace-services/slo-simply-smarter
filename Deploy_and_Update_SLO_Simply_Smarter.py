@@ -51,14 +51,12 @@ urllib3.disable_warnings()
 if Cookie == None:
     head = {
         'Accept': 'application/json',
-        'Content-Type': 'application/json; charset=UTF-8',
-        'Authorization': 'Api-Token '+Token
+        'Content-Type': 'application/json; charset=UTF-8'
     }
 else:
     head = {
         'Accept': 'application/json',
         'Content-Type': 'application/json; charset=UTF-8',
-        'Authorization': 'Api-Token '+Token,
         'X-CSRFToken': CSRF,
         'Cookie': Cookie
     }
