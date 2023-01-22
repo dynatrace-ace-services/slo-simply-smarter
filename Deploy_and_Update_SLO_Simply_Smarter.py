@@ -70,7 +70,7 @@ else:
 # generic function GET to call API with a given uri
 def queryDynatraceAPI(uri):
     jsonContent = None
-    #print(head)
+    print(head)
     response = requests.get(uri,headers=head,verify=False)
     #print(response)
     # For successful API call, response code will be 200 (OK)
