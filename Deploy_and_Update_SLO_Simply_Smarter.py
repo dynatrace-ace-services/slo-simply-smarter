@@ -152,7 +152,7 @@ def getDashboard(TENANT, TOKEN):
     global owner
     uri=TENANT+APIdashboard+'?tags=smarter'
 
-    #print(uri)
+    print(uri)
     datastore = queryDynatraceAPI(uri)
     #print(datastore)
     dashboards = datastore['dashboards']
