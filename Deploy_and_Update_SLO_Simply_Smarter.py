@@ -59,8 +59,8 @@ else:
         'Accept': 'application/json',
         'Content-Type': 'application/json; charset=UTF-8',
         'Authorization': 'Api-Token '+Token,
-        'X-CSRFToken': CSRF#,
-        #'Cookie': Cookie
+        'X-CSRFToken': CSRF,
+        'Cookie': Cookie
     }
     
 
@@ -71,9 +71,9 @@ else:
 # generic function GET to call API with a given uri
 def queryDynatraceAPI(uri):
     jsonContent = None
-    print(head)
+    #print(head)
     response = requests.get(uri,headers=head,verify=False)
-    print(response)
+    #print(response)
     # For successful API call, response code will be 200 (OK)
     if(response.ok):
         if(len(response.text) > 0):
@@ -154,9 +154,9 @@ def getDashboard(TENANT, TOKEN):
     global owner
     uri=TENANT+APIdashboard+'?tags=smarter'
 
-    print(uri)
+    #print(uri)
     datastore = queryDynatraceAPI(uri)
-    print(datastore)
+    #print(datastore)
     dashboards = datastore['dashboards']
     for dashboard in dashboards :
         if dashboard['name'] in Dashboard_target:
@@ -294,10 +294,8 @@ if Cookie != None or CSRF != None :
     print(' Temporary Cookie and CSRFToken from Mission Control')
     print('  Cookie', Cookie)
     print('  CSRFToken', CSRF)
-    
 if deploy != 'SLO' and deploy != 'slo' :
     print(' Owner', owner)
-
 if Tenant == None :
     print('ERROR : MyTenant is empty')
     exit()
