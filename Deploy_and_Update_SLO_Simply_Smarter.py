@@ -11,7 +11,7 @@ import re
 Tenant="https://"+str(os.getenv('MyTenant'))
 Token=os.getenv('MyToken')
 Cookie=os.getenv('Cookie')
-CSRF=os.getenv('X-CSRFToken')
+CSRF=os.getenv('CSRFToken')
 
 
 ##################################
@@ -289,9 +289,9 @@ print(' MyTenant', Tenant)
 print(' MyToken', 'dt0c01.'+Token.split('.')[1]+'.*****')
 print(' Deploy', deploy)
 if Cookie != None or CSRF != None :
-    print(' Temporary Cookie and X-CSRFToken from Mission Control')
+    print(' Temporary Cookie and CSRFToken from Mission Control')
     print('  Cookie', Cookie)
-    print('  X-CSRFToken', CSRF)
+    print('  CSRFToken', CSRF)
     
 if deploy != 'SLO' and deploy != 'slo' :
     print(' Owner', owner)
@@ -304,7 +304,7 @@ if Token == None :
     exit()
 if Cookie != None :
     if CSRF == None :
-        print('ERROR : X-CSRFToken is empty')
+        print('ERROR : CSRFToken is empty')
         exit()
 if CSRF != None :
     if Cookie == None :
