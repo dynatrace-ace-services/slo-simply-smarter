@@ -1,8 +1,8 @@
 # SLO Simply Smarter
 
-Quickstart Ace Integrator : https://github.com/dynatrace-ace-services/quickstart-ace-configurator  
-✅ SLO Simply Smarter : https://github.com/dynatrace-ace-services/slo-simply-smarter  
-Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-integration  
+Quickstart Ace Integrator : https://github.com/dynatrace-ace-services/quickstart-ace-configurator#readme  
+✅ SLO Simply Smarter : https://github.com/dynatrace-ace-services/slo-simply-smarter#readme  
+Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-integration#readm
 
 ## 1) Prerequisites
 
