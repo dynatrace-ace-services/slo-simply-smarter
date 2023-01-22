@@ -6,7 +6,7 @@ Youtube : [SLO for OPS - Boost your Service Desk integration](https://youtu.be/u
 Monaco introduction : [What is Monaco for Dynatrace?](/What-is-Monaco-for-Dynatrace.pdf) 
 BizOpsConfigurator : [Welcome to Dynatrace BizOps Dashboards](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites)
 
-Quickstart Ace Integrator : https://github.com/dynatrace-ace-services/quickstart-ace-configurator  
+Deployment best practices : https://github.com/dynatrace-ace-services/quickstart-ace-configurator  
 ✅ SLO Simply Smarter : https://github.com/dynatrace-ace-services/slo-simply-smarter  
 Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-integration  
 
