@@ -72,6 +72,7 @@ else:
 def queryDynatraceAPI(uri):
     jsonContent = None
     response = requests.get(uri,headers=head,verify=False)
+    print(response)
     # For successful API call, response code will be 200 (OK)
     if(response.ok):
         if(len(response.text) > 0):
