@@ -154,7 +154,7 @@ def getDashboard(TENANT, TOKEN):
 
     print(uri)
     datastore = queryDynatraceAPI(uri)
-    #print(datastore)
+    print(datastore)
     dashboards = datastore['dashboards']
     for dashboard in dashboards :
         if dashboard['name'] in Dashboard_target:
