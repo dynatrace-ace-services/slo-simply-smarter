@@ -150,12 +150,10 @@ If you can't install `SLO Simply Smarter` with python script or with Bizops, fol
  
  ---
  
-Coming soon : with Mission Control and Python script: 
-- add these two temporary variables from your Mission Control access
-- and run the Python script:  
+Coming soon : with Mission Control and Python script: add these two temporary variables from your Mission Control access and run the Python script:  
  
-     export Cookie=***
-     export CSRFToken=***
+    export Cookie=***
+    export CSRFToken=***
     
  From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and Cookie like that : 
  ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
