@@ -52,6 +52,18 @@ Prerequisite : requests installed
   
  The `SLO simply smarter` is installed 
  
+ With Mission Control, add these two temporary variables from your Mission Control access :  
+ 
+    export Cookie=XXX
+    export X-CSRFToken=MyOwner (optionel - no need to define this user in the UI)
+    
+ From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and Cookie like that : 
+ ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
+
+    
+    
+ 
+ 
 ---
 
 # Installation without `Python`
