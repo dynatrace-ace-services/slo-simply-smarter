@@ -7,7 +7,7 @@ Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-inte
 ## 1) Prerequisites
 
 - `Host Group` and `Management Zone` best practices with [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
-- `ITSM integration` best practices with [easy ITSM](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
+- `ITSM integration` best practices with [easy ITSM integration](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
 
 ## 2) Create an `APi-Token` with this scope :
 
