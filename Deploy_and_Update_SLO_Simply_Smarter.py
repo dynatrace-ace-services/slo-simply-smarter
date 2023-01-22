@@ -136,7 +136,7 @@ def putDynatraceAPI(uri, payload):
 ##################################
 def getSLO(TENANT, TOKEN):
     for slo_filter in ['smarter', 'optimization']:
-        uri=TENANT+APIslo+'?pageSize=100&sloSelector=text("'+slo_filter+'")&sort=name&timeFrame=CURRENT&demo=false&evaluate=false&enabledSlos=true&showGlobalSlos=true'
+        uri=TENANT+APIslo+'?pageSize=100&sloSelector=text("'+slo_filter+'")&sort=name&timeFrame=CURRENT&demo=false&evaluate=false&enabledSlos=true&showGlobalSlos=true&Api-Token='+TOKEN
 
         #print(uri)
         datastore = queryDynatraceAPI(uri)
@@ -152,9 +152,9 @@ def getSLO(TENANT, TOKEN):
 
 def getDashboard(TENANT, TOKEN):
     global owner
-    uri=TENANT+APIdashboard+'?tags=smarter'
+    uri=TENANT+APIdashboard+'?tags=smarter&Api-Token='+TOKEN
 
-    #print(uri)
+    print(uri)
     datastore = queryDynatraceAPI(uri)
     #print(datastore)
     dashboards = datastore['dashboards']
@@ -173,7 +173,7 @@ def getDashboard(TENANT, TOKEN):
 
 def mappSloDashboard(TENANT, TOKEN):
     print('\nmapping slo')
-    uri=TENANT+APIdashboard+'?tags=smarter'
+    uri=TENANT+APIdashboard+'?tags=smarter&Api-Token='+TOKEN
 
     #print(uri)
     datastore = queryDynatraceAPI(uri)
@@ -183,7 +183,7 @@ def mappSloDashboard(TENANT, TOKEN):
     for dashboard in dashboards :
             if dashboard['name'] in ['✔ SLO Simply Smarter', '✔ SLO Resource Optimization'] :
 
-                uri=TENANT+APIdashboard+'/'+dashboard['id']
+                uri=TENANT+APIdashboard+'/'+dashboard['id']+'?Api-Token='+TOKEN
                 datastore = queryDynatraceAPI(uri)
                 #print(datastore)
                 data=json.dumps(datastore)
@@ -210,7 +210,7 @@ def updateSLO(TENANT, TOKEN):
         payload['id']=SLO_target[slo]
         
         print(' update', slo, SLO_target[slo])
-        uri=TENANT+APIslo+'/'+SLO_target[slo]
+        uri=TENANT+APIslo+'/'+SLO_target[slo]+'?Api-Token='+TOKEN
         putDynatraceAPI(uri, payload)
 
 
@@ -226,7 +226,7 @@ def generateSLO(TENANT, TOKEN):
             payload['name']=slo
         
             print(' deploy', slo, SLO_target[slo])
-            uri=TENANT+APIslo
+            uri=TENANT+APIslo+'?Api-Token='+TOKEN
             result=postDynatraceAPI(uri, payload)
 
     return()
@@ -247,7 +247,7 @@ def generateDashboard(TENANT, TOKEN):
             del payload['id']
     
             print(' deploy', dashboard, Dashboard_target[dashboard])
-            uri=TENANT+APIdashboard
+            uri=TENANT+APIdashboard+'?Api-Token='+TOKEN
             result=postDynatraceAPI(uri, payload)
         else:
             url='https://raw.githubusercontent.com/JLLormeau/dynatrace_template_fr/master/'+Dashboard_mapping_name[dashboard]
@@ -257,7 +257,7 @@ def generateDashboard(TENANT, TOKEN):
             payload['id']=Dashboard_target[dashboard]
     
             print(' deploy', dashboard, Dashboard_target[dashboard])
-            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]
+            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
             result=putDynatraceAPI(uri, payload)
             
     return()
@@ -266,7 +266,7 @@ def mappDashboard(TENANT, TOKEN):
     global owner
     print('\nupdate dashboards')
     for dashboard in Dashboard_target: 
-            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]
+            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
             datastore = queryDynatraceAPI(uri)
             #print(datastore)
             datastore['dashboardMetadata']['owner']=owner
@@ -276,11 +276,12 @@ def mappDashboard(TENANT, TOKEN):
                         data=re.sub(Dashboard_source[i], Dashboard_target[i], data)
                         
             print(' update', dashboard, Dashboard_target[dashboard])
-            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]
+            uri=TENANT+APIdashboard+'/'+Dashboard_target[dashboard]+'?Api-Token='+TOKEN
             putDynatraceAPI(uri, json.loads(data))
     print(' => with owner', owner)
             
     return()
+
 ##################################
 ## Main program
 ##################################
