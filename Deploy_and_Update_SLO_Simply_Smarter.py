@@ -292,7 +292,7 @@ print(' Deploy', deploy)
 if Cookie != None or CSRF != None :
     print(' Temporary Cookie and CSRFToken from Mission Control')
     print('  Cookie', Cookie)
-    print('  CSRFToken', CSRF)
+    print('  X-CSRFToken', CSRF)
 if deploy != 'SLO' and deploy != 'slo' :
     print(' Owner', owner)
 if Tenant == None :
