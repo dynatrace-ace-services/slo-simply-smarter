@@ -57,7 +57,7 @@ Prerequisite : requests installed
  With Mission Control, add these two temporary variables from your Mission Control access :  
  
     export Cookie=***
-    export X-CSRFToken=***
+    export CSRFToken=***
     
  From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and Cookie like that : 
  ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
