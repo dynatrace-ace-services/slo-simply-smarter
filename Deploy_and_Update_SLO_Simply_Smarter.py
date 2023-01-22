@@ -59,8 +59,8 @@ else:
         'Accept': 'application/json',
         'Content-Type': 'application/json; charset=UTF-8',
         'Authorization': 'Api-Token '+Token,
-        'X-CSRFToken': CSRF,
-        'Cookie': Cookie
+        'X-CSRFToken': CSRF#,
+        #'Cookie': Cookie
     }
     
 
