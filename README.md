@@ -56,7 +56,7 @@ Prerequisite : requests installed
  
 # From Mission Control 
 
-Open the python script and add these two temporary variables `Cookie` & `X-CSRFToken` and run the script with the appropriate variables (MyTenant=< clusterid >-managed.internal.dynatrace.com:8021/e/< tenantid > and MyToken) :  
+Open the python script and add these two temporary variables `Cookie` & `X-CSRFToken` and run the script (in this case MyTenant=[clusterid]-managed.internal.dynatrace.com:8021/e/[tenantid])  :  
  
     Cookie='xxx'
     CSRFToken='xxx'
