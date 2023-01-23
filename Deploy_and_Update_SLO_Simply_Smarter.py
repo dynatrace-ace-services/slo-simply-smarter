@@ -52,7 +52,7 @@ if Cookie == None:
     head = {
         'Accept': 'application/json',
         'Content-Type': 'application/json; charset=UTF-8',
-		'Authorization': 'Api-Token {}'.format(dynToken)
+		'Authorization': 'Api-Token {}'.format(Token)
     }
 else:
     head = {
