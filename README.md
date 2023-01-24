@@ -4,6 +4,9 @@ Deployment best practices : https://github.com/dynatrace-ace-services/quickstart
 Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-integration#readme  
 ✅ SLO Simply Smarter installation : https://github.com/dynatrace-ace-services/slo-simply-smarter#readme  
 
+Demo : 
+https://demo.live.dynatrace.com/#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a003-a017-0000-000000000133
+
 ## 1) Prerequisites
 
 - `Host Group` and `Management Zone` best practices with [Deployment best practices](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
