@@ -6,7 +6,9 @@ Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-inte
 
 Demo: [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a003-a017-0000-000000000133)
 
-## 1) Prerequisites
+![image](https://user-images.githubusercontent.com/40337213/216471133-93b030b9-d84e-47d6-a53c-80a80bfc1423.png)
+
+## 1) Prerequisites installation
 
 - `Host Group` and `Management Zone` best practices with [Deployment best practices](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 - `ITSM integration` best practices with [Easy ITSM integration](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
