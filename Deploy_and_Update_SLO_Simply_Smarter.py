@@ -295,7 +295,7 @@ def mappDashboard(TENANT, TOKEN):
 print("######## SLO Simply Smarter automatic deployment ")
 print('\nvariables') 
 print(' MyTenant', Tenant)
-print(' MyToken', Token[0-10]+'*****')
+print(' MyToken', Token[0:10]+'*****')
 print(' Deploy', deploy)
 if Cookie != '' or CSRF != '' :
     print(' Temporary Cookie and CSRFToken from Mission Control')
