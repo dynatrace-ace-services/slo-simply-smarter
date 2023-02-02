@@ -28,7 +28,7 @@ Demo: [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboa
 
   
 ## 3) Automatic installation and update with `script python`
-Prerequisite : requests installed 
+Prerequisite : python with requests installed 
  
     python 3.6+
     pip install requests
