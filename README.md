@@ -33,7 +33,7 @@ Prerequisite : requests installed
     python 3.6+
     pip install requests
     
-    internet acces [dynatrace_template](https://github.com/JLLormeau/dynatrace_template_fr) & [slo](https://github.com/dynatrace-ace-services/slo-simply-smarter/tree/main/SLOSimplySmarter/slo)
++ internet acces [dynatrace_template](https://github.com/JLLormeau/dynatrace_template_fr) & [slo](https://github.com/dynatrace-ace-services/slo-simply-smarter/tree/main/SLOSimplySmarter/slo)
  
  2 options :  
  - Deploy or update SLOs and Dashboards : export Deploy=`ALL` (default value, full update )  
