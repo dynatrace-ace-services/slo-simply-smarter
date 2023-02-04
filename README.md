@@ -67,6 +67,21 @@ From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and the f
 # Installation without `Python`
 If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton which uses Bizops and Monaco
 
+## 2) Create an `APi-Token` with this scope :
+
+ - Access problem and event feed, metrics, and topology
+ - Read configuration 
+ - Write configuration
+ - Read SLO
+ - Write SLO
+ - User sessions(*)
+ - Read metrics(*)
+ - Write metrics(*)
+ - Ingest Metrics(*) 
+   
+  ![image](https://user-images.githubusercontent.com/40337213/210615861-e34ab003-df23-455f-9513-2d1ac63a4759.png)  
+  (*)  for BizOps only ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
+
 ## step1) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
 For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
 
