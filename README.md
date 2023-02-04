@@ -6,7 +6,7 @@ Easy ITSM integration : https://github.com/dynatrace-ace-services/easy-itsm-inte
 
 Demo: [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a003-a017-0000-000000000133)
 
-![image](https://user-images.githubusercontent.com/40337213/216790168-18f26b4e-7da3-4432-af68-4e840a45ad85.png)
+![image](https://user-images.githubusercontent.com/40337213/216790208-070422d3-990b-4836-bade-5861473a7d7c.png)
 
 ## 1) Prerequisites installation
 
