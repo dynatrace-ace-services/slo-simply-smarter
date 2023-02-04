@@ -164,7 +164,7 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
       
   
  ## Automatic mapping  
- With Python - : see paragraph Automatic installation with `script python`
+ With Python - : see paragraph Automatic installation with `python script`
  with this variable: 
  
     export Deploy=SLO
@@ -174,7 +174,7 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
 
 # Installation  for `OffLine` environment
 
-1) offline insatallation with pthon script (witout Internet access) : click [here](https://github.com/JLLormeau/slo_simply_smarter_offline)
+1) offline insatallation with `python script` (witout Internet access) : click [here](https://github.com/JLLormeau/slo_simply_smarter_offline)
 
 2) manual instalatiuon - only if you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](https://github.com/JLLormeau/slo_simply_smarter_offline/blob/main/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
 
