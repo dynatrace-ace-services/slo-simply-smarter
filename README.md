@@ -67,7 +67,7 @@ From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and the f
 # Installation without `Python`
 If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton which uses Bizops and Monaco
 
-## 2) Create an `APi-Token` with this scope :
+## 1) Create an `APi-Token` with this scope :
 
  - Access problem and event feed, metrics, and topology
  - Read configuration 
@@ -82,7 +82,7 @@ If you can't install `SLO Simply Smarter` with python script, you can follow thi
   ![image](https://user-images.githubusercontent.com/40337213/210615861-e34ab003-df23-455f-9513-2d1ac63a4759.png)  
   (*)  for BizOps only ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
 
-## step1) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
+## 2) `BizOps` : import Dashboard `Dynatrace: Simply Smarter`
 For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io/BizOpsConfigurator/index.html#begin)  
 
  
@@ -100,7 +100,7 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
  ![image](https://user-images.githubusercontent.com/40337213/210232428-7de19b44-579a-4979-9e4e-6b9ef61bcc7a.png)  
  - For OffLine environment, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
  
-## step2) `Monaco`Import `SLO template`
+## 3) `Monaco`Import `SLO template`
  - Use [monaco](https://dynatrace-oss.github.io/dynatrace-monitoring-as-code/)
  
  `installation`
@@ -121,7 +121,7 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
 
     ./monaco deploy -e=environments.yaml SLOSimplySmarter
        
- ## step3) Mapp `SLO Simply Smarter` and `SLO Resource Optimization` with SLO Smarter  
+ ## 4) Mapp `SLO Simply Smarter` and `SLO Resource Optimization` with SLO Smarter  
  
  # Manually mapping
  
@@ -162,15 +162,21 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
 
 ![image](https://user-images.githubusercontent.com/40337213/210247317-06d3a1dd-331c-44ca-9c41-cc3d08249a2c.png)
       
+     
+      
  ## Automatic mapping  
- With Python : see paragraph Automatic installation with `script python`
- option `Deploy=SLO`
+ With Python - : see paragraph Automatic installation with `script python`
+ with this variable: 
+ 
+    export Deploy=SLO
 
 ---
 ---
 
-# Installation manually for `OffLine` environment
-If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](https://github.com/JLLormeau/slo_simply_smarter_offline/blob/main/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
+# Installation  for `OffLine` environment
+
+
+2) manually instalatiuon - If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](https://github.com/JLLormeau/slo_simply_smarter_offline/blob/main/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
 or install the python script in offline mode from [here](https://github.com/JLLormeau/slo_simply_smarter_offline)
 
 
