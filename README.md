@@ -20,38 +20,29 @@ Demo: [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboa
  - Write configuration
  - Read SLO
  - Write SLO
- - User sessions(*)
- - Read metrics(*)
- - Write metrics(*)
- - Ingest Metrics(*) 
-   
-  ![image](https://user-images.githubusercontent.com/40337213/210615861-e34ab003-df23-455f-9513-2d1ac63a4759.png)  
-  (*) optionnel for BizOps only ([detail](https://dynatrace.github.io/BizOpsConfigurator/index.html#prerequisites))  
 
   
-## 3) Automatic installation and update with `script python`
+## 3) Automatic installation and update with `python script`
 Prerequisite : python with requests installed 
  
     python 3.6+
     pip install requests
     
 + internet acces [dahsboard template](https://github.com/JLLormeau/dynatrace_template_fr) & [slo template](https://github.com/dynatrace-ace-services/slo-simply-smarter/tree/main/SLOSimplySmarter/slo)
- 
- 2 options :  
- - Deploy or update SLOs and Dashboards : export Deploy=`ALL` (default value, full update )  
- - Mapping SLO with Dashboards : export Deploy=`SLO` (only mapping, dashboard and slos are not updated )  
- 
- You can use this script if you want install or update `SLO Simply Smarter`.  
- Have a look to the update [here](https://github.com/JLLormeau/dynatrace_template_fr#readme)
   
+Download the script
+
     git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
     cd slo-simply-smarter
+
+Export the variables
      
     export MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
     export MyToken=dt0c01.1234ABCD.XXXX
-    export Deploy=ALL(Default)|SLO
-    export Owner=MyOwner (optionel - no need to define this user in the UI)
-       
+    export Owner=smarter (optionel - no need to define this user in the UI)
+    
+Run the script 
+
     python3 Deploy_and_Update_SLO_Simply_Smarter.py
     
    ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
@@ -70,6 +61,7 @@ Open the python script and add these two temporary variables `Cookie` & `X-CSRFT
 From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and the full Cookie like that 
 ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
 
+---
 ---
 
 # Installation without `Python`
@@ -159,11 +151,12 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
  With Python : see paragraph Automatic installation with `script python`
  option `Deploy=SLO`
 
-
+---
 ---
 
 # Installation manually for `OffLine` environment
-If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
- 
+If you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](https://github.com/JLLormeau/slo_simply_smarter_offline/blob/main/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
+or install the python script in offline mode from [here](https://github.com/JLLormeau/slo_simply_smarter_offline)
+
 
 
