@@ -61,6 +61,8 @@ Open the python script and add these two temporary variables `Cookie` & `X-CSRFT
 From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and the full Cookie like that 
 ![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
 
+and run the `python script` as described above.
+
 ---
 ---
 
@@ -93,7 +95,7 @@ For Saas and Managed, with the [bizops configurator](https://dynatrace.github.io
     .../ALL
     Dynatrace_Simply Smarter
     next
-    advanced (you can define the owenr = admin)
+    advanced (you can define the owenr = smarter)
     done
        
  
