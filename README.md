@@ -1,8 +1,8 @@
 # Dashboarding Dynatrace Simply Smarter
 
-Foundations for deployment and configuration : https://github.com/dynatrace-ace-services/quickstart-ace-configurator#readme  
-ITSM integration & SLO Quality of Service : https://github.com/dynatrace-ace-services/easy-itsm-integration#readme  
-✅ Dashboarding Dynatrace Simply Smarter : https://github.com/dynatrace-ace-services/slo-simply-smarter#readme  
+Foundations for deployment and configuration : [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator#readme)  
+ITSM integration & SLO Quality of Service : [easy-itsm-integration](https://github.com/dynatrace-ace-services/easy-itsm-integration#readme)  
+✅ Dashboarding Dynatrace Simply Smarter : [slo-simply-smarter](https://github.com/dynatrace-ace-services/slo-simply-smarter#readme)  
 
 Demo: [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a003-a017-0000-000000000133)
 
