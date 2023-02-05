@@ -43,7 +43,7 @@ Export variables
     
 Optional variables
 
-    export Deploy=ALL|SLO (default Deploy = ALL, the SLO option does not deploy the dashboards but only creates the mapping SLO with already imported dashboards)
+    export Deploy=ALL|SLO (default Deploy = ALL, Deploy=SLO option does not deploy the dashboards but only creates the mapping SLO with already imported dashboards)
     export Owner=ACE (default Owner = smarter, the owner don't need to exist as user)
     
 Run the script 
