@@ -326,7 +326,7 @@ if CSRF != '' :
 #info dashboard
 try:
     getDashboard(Tenant, Token)
-else:
+except:
     print('ERROR to connect with your tenant and token : https://'+Tenant+' '+Token[0:15]+'*****')
 
 #update dashboards
