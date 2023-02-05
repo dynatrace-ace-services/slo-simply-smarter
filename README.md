@@ -41,6 +41,10 @@ Export the variables
     export MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
     export MyToken=dt0c01.1234ABCD.XXXX
     
+Optional variable
+
+    export Owner=ACE (default = smarter, don't need to exist as user)
+    
 Run the script 
 
     python3 Deploy_and_Update_SLO_Simply_Smarter.py
