@@ -304,7 +304,7 @@ print(' Deploy', deploy)
 if Cookie != '' or CSRF != '' :
     print(' Temporary Cookie and CSRFToken from Mission Control')
     if len(Cookie) > 15 : 
-        print('  Cookie', Cookie[0:15]+'...'+Cookie[-15:-1])
+	print('  Cookie', Cookie[0:15]+'...'+Cookie[-15:-1])
     else:
 	print('ERROR : Cookie')
 	exit()
