@@ -327,7 +327,8 @@ if CSRF != '' :
 try:
     getDashboard(Tenant, Token)
 except:
-    print('ERROR to connect with your tenant and token : https://'+Tenant+' '+Token[0:15]+'*****')
+    print('Connection ERROR with your tenant "'+Tenant+'" and your token "'+Token[0:15]+'*****"')
+    exit()
 
 #update dashboards
 if deploy != 'SLO' and deploy != 'slo' :
