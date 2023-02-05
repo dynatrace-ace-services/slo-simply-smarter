@@ -35,7 +35,7 @@ Download the script
     git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
     cd slo-simply-smarter
 
-`Linux`
+`Linux`  
 Export the variables
      
     export MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
@@ -53,7 +53,7 @@ Run the script
  
 If you use windows, 
 
-`windows cmd`
+`windows cmd`  
 Export the variables
      
     set MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
@@ -63,7 +63,7 @@ Run the script
 
     python Deploy_and_Update_SLO_Simply_Smarter.py
     
-`windows powershell`
+`windows powershell`  
 Export the variables
      
     $env:MyTenant="abcd123.live.dynatrace.com" for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
