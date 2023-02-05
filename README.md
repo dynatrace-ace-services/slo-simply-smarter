@@ -67,7 +67,7 @@ Run the script
 Export the variables
      
     $env:MyTenant="abcd123.live.dynatrace.com" for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
-    $env: MyToken=dt0c01.1234ABCD.XXXX
+    $env:MyToken="dt0c01.1234ABCD.XXXX"
     
 Run the script 
 
