@@ -48,6 +48,10 @@ Run the script
    ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
   
  The `SLO simply smarter` is installed 
+ 
+ ---
+ 
+If you use windows, 
 
 `windows cmd`
 Export the variables
