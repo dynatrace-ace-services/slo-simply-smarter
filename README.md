@@ -80,6 +80,7 @@ Run the script
  ---
  
 # From Mission Control 
+Doesn't work from `Azure Bash`. Works fine from VM host : linux or windows.  
 
 Open the python script and add these two temporary variables `Cookie` & `X-CSRFToken` and run the script (in this case MyTenant=[clusterid]-managed.internal.dynatrace.com:8021/e/[tenantid])  :  
  
