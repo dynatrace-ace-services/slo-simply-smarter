@@ -8,10 +8,8 @@ import re
 ##################################
 ### Mission Control variables
 ##################################
-#Cookie='full cookie'
-#CSRF='abcdefghij-1234-56789-aaaa-bbbbb|45|bbbbb-abc-aaa-000-aaaa'
-Cookie=''
-CSRF=''
+Cookie='totoelkjdklzjfekl'
+CSRF='tata'
 
 ##################################
 ### Environment Dynatrace
@@ -298,16 +296,15 @@ print(' MyTenant', Tenant)
 if len(Token) > 15 : 
     print(' MyToken', Token[0:15]+'*****')
 else : 
-    print('ERROR : MyToken')
+    print('ERROR : MyToken', Token)
     exit()
 print(' Deploy', deploy)
 if Cookie != '' or CSRF != '' :
     print(' Temporary Cookie and CSRFToken from Mission Control')
-    if len(Cookie) > 15 : 
-	print('  Cookie', Cookie[0:15]+'...'+Cookie[-15:-1])
+    if len(Cookie) > 30 :
+        print('  Cookie', Cookie[0:15]+'...'+Cookie[-15:-1])
     else:
-	print('ERROR : Cookie')
-	exit()
+        print('  Cookie', Cookie)
     print('  X-CSRFToken', CSRF)
 if deploy != 'SLO' and deploy != 'slo' :
     print(' Owner', owner)
