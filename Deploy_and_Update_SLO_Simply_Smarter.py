@@ -8,8 +8,8 @@ import re
 ##################################
 ### Mission Control variables
 ##################################
-Cookie='totoelkjdklzjfekl'
-CSRF='tata'
+Cookie=''
+CSRF=''
 
 ##################################
 ### Environment Dynatrace
@@ -45,7 +45,7 @@ if deploy == None:
     deploy = 'ALL'
 owner=os.getenv('Owner')
 if owner == None:
-    owner = 'admin'
+    owner = 'smarter'
 owner_old=''
 
 #disable warning
@@ -241,7 +241,7 @@ def generateDashboard(TENANT, TOKEN):
     print('\ndeploy dashboards')
     global owner
     if owner == '' :
-        owner = 'admin'
+        owner = 'smarter'
 
     for dashboard in Dashboard_target:
         if Dashboard_target[dashboard] == '':
