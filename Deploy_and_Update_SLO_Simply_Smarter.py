@@ -299,11 +299,15 @@ if len(Token) > 15 :
     print(' MyToken', Token[0:15]+'*****')
 else : 
     print('ERROR : MyToken')
+    exit()
 print(' Deploy', deploy)
 if Cookie != '' or CSRF != '' :
     print(' Temporary Cookie and CSRFToken from Mission Control')
     if len(Cookie) > 15 : 
         print('  Cookie', Cookie[0:15]+'...'+Cookie[-15:-1])
+    else:
+	print('ERROR : Cookie')
+	exit()
     print('  X-CSRFToken', CSRF)
 if deploy != 'SLO' and deploy != 'slo' :
     print(' Owner', owner)
