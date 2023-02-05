@@ -21,7 +21,6 @@ Demo: [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboa
  - Read SLO
  - Write SLO
 
-  
 ## 3) Automatic installation and update with `python script`
 Prerequisite : python with requests installed 
  
@@ -29,17 +28,18 @@ Prerequisite : python with requests installed
     pip install requests
     
 + internet acces [dahsboard template](https://github.com/JLLormeau/dynatrace_template_fr) & [slo template](https://github.com/dynatrace-ace-services/slo-simply-smarter/tree/main/SLOSimplySmarter/slo)
++ git clone on local host (linux or windows)
   
 Download the script
 
     git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
     cd slo-simply-smarter
 
+`Linux`
 Export the variables
      
     export MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
     export MyToken=dt0c01.1234ABCD.XXXX
-    export Owner=smarter (optionel - no need to define this user in the UI)
     
 Run the script 
 
@@ -48,6 +48,26 @@ Run the script
    ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
   
  The `SLO simply smarter` is installed 
+
+`windows cmd`
+Export the variables
+     
+    set MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
+    set MyToken=dt0c01.1234ABCD.XXXX
+    
+Run the script 
+
+    python Deploy_and_Update_SLO_Simply_Smarter.py
+    
+`windows powershell`
+Export the variables
+     
+    $env:MyTenant="abcd123.live.dynatrace.com" for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
+    $env: MyToken=dt0c01.1234ABCD.XXXX
+    
+Run the script 
+
+    python Deploy_and_Update_SLO_Simply_Smarter.py
 
  ---
  
