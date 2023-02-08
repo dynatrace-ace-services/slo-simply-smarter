@@ -6,7 +6,8 @@ ITSM integration & SLO Quality of Service : [easy-itsm-integration](https://gith
 
 Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a003-a017-0000-000000000133)
 
-![image](https://user-images.githubusercontent.com/40337213/216794204-cb267338-8f9f-45df-a235-6d00f684661f.png)
+![image](https://user-images.githubusercontent.com/40337213/217482105-8ad929a7-ce7a-4a7e-b0c4-026886851441.png)
+
 
 ## 1) Prerequisites installation
 
