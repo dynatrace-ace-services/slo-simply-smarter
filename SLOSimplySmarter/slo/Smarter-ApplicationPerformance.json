@@ -8,7 +8,7 @@
  },
  "errorBudgetMetricKey": "func:slo.errorBudget.smarter___application_performance",
  "evaluationType": "AGGREGATE",
- "filter": "type(\"APPLICATION\")",
+ "filter": "type()",
  "metricDenominator": "",
  "metricExpression": "(100)*(builtin:apps.web.actionCount.category:filter(eq(Apdex category,SATISFIED)):splitBy())/(builtin:apps.web.actionCount.category:splitBy())",
  "metricKey": "func:slo.smarter___application_performance",
