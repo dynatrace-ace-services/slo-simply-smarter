@@ -293,6 +293,13 @@ def mappDashboard(TENANT, TOKEN):
 print("######## SLO Simply Smarter automatic deployment ")
 print('\nvariables') 
 print(' MyTenant', Tenant)
+if Tenant == None:
+    print(' Error Tenant is empty')
+    exit()
+if Token == None:
+    print(' Error Token is empty')
+    exit()
+
 if len(Token) > 15 : 
     print(' MyToken', Token[0:15]+'*****')
 else : 
