@@ -1,4 +1,4 @@
-OnDemand:
-    - name: "lab_dynatrace"
+Monaco:
+    - name: "dynatrace"
     - env-url: "https://{{.Env.MyTenant}}"
     - env-token-name: "MyToken"
