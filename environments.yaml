@@ -1,4 +1,4 @@
-Monaco:
-    - name: "dynatrace"
+Env:
+    - name: "Env"
     - env-url: "https://{{.Env.MyTenant}}"
     - env-token-name: "MyToken"
