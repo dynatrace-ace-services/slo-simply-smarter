@@ -16,7 +16,6 @@ Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatr
 
 ## 2) Create an `APi-Token` with this scope :
 
- - Access problem and event feed, metrics, and topology
  - Read configuration 
  - Write configuration
  - Read SLO
@@ -102,11 +101,11 @@ If you can't install `SLO Simply Smarter` with python script, you can follow thi
 
 ## 1) Create an `APi-Token` with this scope :
 
- - Access problem and event feed, metrics, and topology
  - Read configuration 
  - Write configuration
  - Read SLO
  - Write SLO
+ - Access problem and event feed, metrics, and topology (*)
  - User sessions(*)
  - Read metrics(*)
  - Write metrics(*)
