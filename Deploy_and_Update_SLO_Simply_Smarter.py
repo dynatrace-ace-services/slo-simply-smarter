@@ -126,11 +126,11 @@ def putDynatraceAPI(uri, payload):
         jsonContent="success"
     else:
         jsonContent = json.loads(response.text)
-        print(jsonContent)
+        #print(jsonContent)
         errorMessage = ""
         if (jsonContent["error"]):
             errorMessage = jsonContent["error"]["message"]
-            print("Dynatrace API returned an error: " + errorMessage)
+            #print("Dynatrace API returned an error: " + errorMessage)
         jsonContent = None
         #raise Exception("Error", "Dynatrace API returned an error: " + errorMessage)
 
