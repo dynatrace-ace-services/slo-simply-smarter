@@ -12,7 +12,7 @@ Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatr
 ## 1) Prerequisites installation
 
 - `Host Group` and `Management Zone` best practices with [Deployment best practices](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
-- `ITSM integration` best practices with [Easy ITSM integration](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
+- `ITSM integration` best practices with [ITSM integration & SLO Quality of Service](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
 
 ## 2) Create an `APi-Token` with this scope :
 
