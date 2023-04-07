@@ -93,7 +93,7 @@ Optional variables
     
 Run the script 
 
-    python3 Deploy_and_Update_SLO_Simply_Smarter.py
+    python3 project_python/script/Deploy_and_Update_SLO_Simply_Smarter.py
     
    ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
   
