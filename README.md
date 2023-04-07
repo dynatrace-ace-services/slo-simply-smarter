@@ -48,6 +48,10 @@ Example for linux
 `deploy`
 
     ./monaco deploy manifest.yaml
+    
+`result`
+
+![image](https://user-images.githubusercontent.com/40337213/230628299-ace2a7f6-1555-4f18-b67d-3f184c83d9d0.png)
 
 ---
 ---
