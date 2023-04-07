@@ -8,11 +8,16 @@ Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatr
 
 ![image](https://user-images.githubusercontent.com/40337213/217482105-8ad929a7-ce7a-4a7e-b0c4-026886851441.png)
 
+---
+---
+
+# Installation with `Monaco v2`
 
 ## 1) Prerequisites installation
 
 - `Host Group` and `Management Zone` best practices with [Deployment best practices](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
 - `ITSM integration` best practices with [ITSM integration & SLO Quality of Service](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
+
 
 ## 2) Create an `APi-Token` with this scope :
 
@@ -20,8 +25,43 @@ Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatr
  - Write configuration
  - Read SLO
  - Write SLO
+ - Access problem and event feed, metrics, and topology
 
-## 3) Automatic installation and update with `python script`
+
+## 3) Monaco installation :
+
+Documentation v2 [here](https://www.dynatrace.com/support/help/manage/configuration-as-code)  
+Example for linux 
+
+`installation`  
+ 
+    git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
+    cd slo-simply-smarter
+    curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
+    chmod +x monaco
+       
+`varaiables`
+
+    export DT_TENANT_URL=https://abcd123.live.dynatrace.com for saas or export MyTenant=https://domaine.com/e/abcd12234 for managed 
+    export DT_API_TOKEN=dt0c01.1234ABCD.XXXX
+       
+`deploy`
+
+    ./monaco deploy manifest.yaml
+
+---
+---
+
+# Installation with `Python`
+
+## 1) Create an `APi-Token` with this scope :
+
+ - Read configuration 
+ - Write configuration
+ - Read SLO
+ - Write SLO
+
+## 2) Automatic installation and update with `python script`
 Prerequisite : python with requests installed 
  
     python 3.6+
