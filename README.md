@@ -86,11 +86,6 @@ Export variables
     export MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
     export MyToken=dt0c01.1234ABCD.XXXX
     
-Optional variables
-
-    export Deploy=ALL|SLO (default Deploy=ALL, Deploy=SLO option does not deploy the dashboards but only creates the mapping SLO with already imported dashboards)
-    export Owner=ACE (default Owner=smarter, the owner don't need to exist as user)
-    
 Run the script 
 
     python3 project_python/script/Deploy_and_Update_SLO_Simply_Smarter.py
