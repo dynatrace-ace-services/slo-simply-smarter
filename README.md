@@ -28,7 +28,7 @@ Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatr
  - Access problem and event feed, metrics, and topology
 
 
-## 3) Monaco installation :
+## 3) Deploy with Monaco :
 
 Documentation v2 [here](https://www.dynatrace.com/support/help/manage/configuration-as-code)  
 Example for linux 
@@ -50,6 +50,7 @@ Example for linux
     ./monaco deploy manifest.yaml
 
 ---
+Other installations
 ---
 
 # Installation with `Python`
