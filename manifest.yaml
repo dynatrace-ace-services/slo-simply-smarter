@@ -2,12 +2,12 @@
 manifestVersion: "1.0"
 
 projects:
-- name: project
+- name: project_monaco
 
 environmentGroups:
 - name: default
   environments:
-  - name: project
+  - name: MyEnv
     url:
       type: environment
       value: DT_TENANT_URL

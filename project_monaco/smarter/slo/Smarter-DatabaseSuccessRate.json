@@ -1,0 +1,22 @@
+{
+ "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___database_availability",
+ "enabled": true,
+ "errorBudgetBurnRate": {
+  "burnRateVisualizationEnabled": true,
+  "fastBurnThreshold": 10
+ },
+ "errorBudgetMetricKey": "func:slo.errorBudget.smarter___database_availability",
+ "evaluationType": "AGGREGATE",
+ "filter": "",
+ "metricDenominator": "",
+ "metricExpression": "100-builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"DATABASE_SERVICE~\")\"))))):splitBy()",
+ "metricKey": "func:slo.smarter___database_availability",
+ "metricNumerator": "",
+ "metricRate": "",
+ "name": "{{.name}}",
+ "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___database_availability",
+ "target": 95,
+ "timeframe": "-1w",
+ "useRateMetric": true,
+ "warning": 98
+}
