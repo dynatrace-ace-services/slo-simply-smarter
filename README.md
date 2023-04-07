@@ -50,8 +50,8 @@ Example for linux
     ./monaco deploy manifest.yaml
 
 ---
-Other installations
 ---
+Other installations
 
 # Installation with `Python`
 
