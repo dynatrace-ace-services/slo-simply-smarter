@@ -53,7 +53,7 @@ Example for linux
 ---
 Other installations
 
-# Installation with `Python` **
+# Installation with `Python`
 
 ## 1) Create an `APi-Token` with this scope :
 
