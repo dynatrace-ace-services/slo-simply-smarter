@@ -11,7 +11,7 @@ Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatr
 ---
 ---
 
-# Installation with `Monaco v2` *****
+# Installation with `Monaco v2` (recommanded)
 
 ## 1) Prerequisites installation
 
@@ -137,7 +137,7 @@ and run the `python script` as described above.
 ---
 ---
 
-# Installation for `OffLine` environment *
+# Installation for `OffLine` environment
 
 1) offline insatallation   
 with `python script` and witout Internet access : click [here](https://github.com/JLLormeau/slo_simply_smarter_offline)
