@@ -137,7 +137,7 @@ and run the `python script` as described above.
 ---
 ---
 
-# Installation without `Python`
+# Installation with  `BizopConfigurator`
 If you can't install `SLO Simply Smarter` with python script, you can follow this workflow installaton which uses Bizops and Monaco
 
 ## 1) Create an `APi-Token` with this scope :
