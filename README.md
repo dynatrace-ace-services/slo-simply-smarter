@@ -40,7 +40,7 @@ Example for linux
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
        
-`varaiables`
+`variables`
 
     export DT_TENANT_URL=https://abcd123.live.dynatrace.com for saas or export MyTenant=https://domaine.com/e/abcd12234 for managed 
     export DT_API_TOKEN=dt0c01.1234ABCD.XXXX
