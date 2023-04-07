@@ -1,0 +1,23 @@
+{
+ "burnRateMetricKey": "func:slo.errorBudgetBurnRate.smarter___application_performance",
+ "denominatorValue": 0,
+ "enabled": true,
+ "errorBudgetBurnRate": {
+  "burnRateVisualizationEnabled": true,
+  "fastBurnThreshold": 10
+ },
+ "errorBudgetMetricKey": "func:slo.errorBudget.smarter___application_performance",
+ "evaluationType": "AGGREGATE",
+ "filter": "",
+ "metricDenominator": "",
+ "metricExpression": "(100)*(builtin:apps.web.actionCount.category:filter(eq(Apdex category,SATISFIED)):splitBy())/(builtin:apps.web.actionCount.category:splitBy())",
+ "metricKey": "func:slo.smarter___application_performance",
+ "metricNumerator": "",
+ "metricRate": "",
+ "name": "{{.name}}",
+ "normalizedErrorBudgetMetricKey": "func:slo.normalizedErrorBudget.smarter___application_performance",
+ "target": 95,
+ "timeframe": "-1w",
+ "useRateMetric": true,
+ "warning": 98
+}

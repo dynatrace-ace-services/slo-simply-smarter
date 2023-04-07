@@ -1,0 +1,1899 @@
+{
+  "dashboardMetadata": {
+    "name": "{{ .name }}",
+    "shared": true,
+    "owner": "smarter",
+    "tags": [
+      "smarter"
+    ],
+    "popularity": 1,
+    "hasConsistentColors": false
+  },
+  "tiles": [
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1254,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id={{ .simply_smarter_dashboard_id }})\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1102,
+        "width": 266,
+        "height": 190
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "🔍 [Digital experience](#dashboard;id={{ .user_experience_web_apps_dashboard_id }})\n***\n\n- [web applications](#dashboard;id={{ .user_experience_web_apps_dashboard_id }})\n- [mobile or custom app](#dashboard;id={{ .user_experience_mobile_apps_dashboard_id }})\n- [synthetic (browser)](#dashboard;id={{ .synthetic_browser_dashboard_id }}) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?gwtMpd=Y&filtrfilterUXScore=1&filter=uxScore:Frustrating) \n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1368,
+        "width": 266,
+        "height": 190
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "## 🔍 [Services](#dashboard;id={{ .services_dashboard_id }}) \n***\n\n- [services](#dashboard;id={{ .services_dashboard_id }}) \n- ✅ [database services](#dashboard;id={{ .database_services_dashboard_id }}) \n- [synthetic (service)](#dashboard;id={{ .synthetic_service_dashboard_id }}) \n- [slow requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E0%11100000%144611686018427387%1026%110\n) \n- [failed requests↗](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%103%110)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1634,
+        "width": 266,
+        "height": 190
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "🔍 [Infrastructure & cloud](#dashboard;id={{ .infrastructure_dashboard_id }})\n***\n- [infrastructure](#dashboard;id={{ .infrastructure_dashboard_id }})\n- [logs↗](ui/log-monitoring)\n- [techno↗](#newprocessessummary)\n- [containers↗](/ui/entity/list/CONTAINER_GROUP)\n- [kubernetes↗](/ui/kubernetes)"
+    },
+    {
+      "name": "Problems",
+      "nameSize": "small",
+      "tileType": "OPEN_PROBLEMS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 76,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Host health",
+      "nameSize": "small",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 836,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "chartVisible": true
+    },
+    {
+      "name": "Service health",
+      "nameSize": "small",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 532,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "chartVisible": true
+    },
+    {
+      "name": "🚦Health",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 304,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Database health",
+      "nameSize": "small",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 684,
+        "width": 152,
+        "height": 190
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "chartVisible": true
+    },
+    {
+      "name": "Total requests",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 722,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 418,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 0,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 1026,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Database call",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 0,
+        "width": 342,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Response time",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 1026,
+        "width": 456,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 0,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Errors",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 874,
+        "left": 0,
+        "width": 456,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 722,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 1026,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 1330,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 1634,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Connection per minute",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 418,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Time spent in SQL ",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1330,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Failure rate",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1634,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Response time",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1026,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 114,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "Connection successful %",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 114,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Database connections",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 874,
+        "left": 1026,
+        "width": 456,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 1026,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "- - - "
+    },
+    {
+      "name": "",
+      "nameSize": "small",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 380,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "filterConfig": {
+        "type": "WEB_CHECK",
+        "customName": "Synthetic",
+        "defaultName": "Active synthetic monitor",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "WEB_CHECK": {
+            "WEBCHECK_STATUS": [
+              "Active"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Connection database successful %",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 114,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Connection database successful %",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                ""
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+      ]
+    },
+    {
+      "name": "Total connections per minute",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 418,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Total connections per minute",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                ""
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+      ]
+    },
+    {
+      "name": "Number of calls to databases",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 722,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Number of calls to databases",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                ""
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+      ]
+    },
+    {
+      "name": "Time spent in database calls (Sum)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1330,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Time spent in database calls (Sum)",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                ""
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+        "resolution=null&(builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+      ]
+    },
+    {
+      "name": "Failure rate (any  errors)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1634,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Failure rate (any  errors)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.errors.total.rate",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "DATABASE_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                ""
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy():avg:auto:sort(value(avg,descending)):limit(20))"
+      ]
+    },
+    {
+      "name": "Database",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 0,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Database",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Database",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 342,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Database",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Response time (90%tile)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1026,
+        "width": 266,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Response time",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.response.time",
+          "spaceAggregation": "PERCENTILE_90",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "DATABASE_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A",
+                ""
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "singleValueSettings": {
+          "showTrend": true,
+          "showSparkLine": true,
+          "linkTileColorToThreshold": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names",
+        "resolution=null&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy():percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20))"
+      ]
+    },
+    {
+      "name": "Response time (90%tile)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1368,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Response time",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.response.time",
+          "spaceAggregation": "PERCENTILE_90",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "DATABASE_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Response time (90%tile)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 570,
+        "left": 1026,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Response time",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.response.time",
+          "spaceAggregation": "PERCENTILE_90",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "DATABASE_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A",
+            "properties": {
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ],
+        "tableSettings": {},
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.response.time:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):percentile(90.0):auto:sort(value(percentile(90.0),descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1520,
+        "width": 266,
+        "height": 38
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "markdown": "🎯[SLO simply smarter](#dashboard;id={{ .slo_simply_smarter_dashboard_id }};) \n"
+    },
+    {
+      "name": "Failure rate (any  errors)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 342,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Failure rate (any  errors)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.errors.total.rate",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "DATABASE_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "RED",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS",
+          "xAxisBuckets": 60
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Failure rate (any  errors)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 0,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Failure rate (any  errors)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.errors.total.rate",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.service",
+                "filterType": "ENTITY_ATTRIBUTE",
+                "filterOperator": "OR",
+                "entityAttribute": "servicetype",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "DATABASE_SERVICE",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "auto",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "RED",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.errors.total.rate:filter(and(or(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\"))))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(20)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Connection success rate",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1026,
+        "width": 342,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Connection success rate",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 98,
+                "color": "#7dc540"
+              },
+              {
+                "value": 95,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=Inf&(builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
+    },
+    {
+      "name": "Connection success rate",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1368,
+        "width": 646,
+        "height": 304
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "customName": "Connection success rate",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "rate": "NONE",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HEATMAP",
+        "global": {
+          "hideLegend": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {
+          "yAxis": "DIMENSIONS",
+          "xAxisBuckets": 60
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 98,
+                "color": "#7dc540"
+              },
+              {
+                "value": 95,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      },
+      "metricExpressions": [
+        "resolution=null&(builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+      ]
+    },
+    {
+      "name": "",
+      "nameSize": "small",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 228,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "isAutoRefreshDisabled": false,
+      "filterConfig": {
+        "type": "APPLICATION",
+        "customName": "Applications",
+        "defaultName": "Monitored applications",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "APPLICATION": {
+            "APPLICATION_STATUS": [
+              "0"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+configs:
+- id: bbbbbbbb-b003-b017-0000-000000000133
+  config:
+    name: "\U0001F3E0 Dynatrace: simply smarter"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: simply-smarter.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0001-000000000133
+  config:
+    name: "✔ Services"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: services.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0002-000000000133
+  config:
+    name: "✔ User experience (web applications)"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: user-experience-web-apps.json
+    skip: false
+  type:
+    api: dashboard
+
+- id: bbbbbbbb-b003-b017-0003-000000000133
+  config:
+    name: "✔ User experience (mobile apps)"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: user-experience-mobile-apps.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0004-000000000133
+  config:
+    name: "✔ Synthetic (browser)"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: synthetic-browser.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0005-000000000133
+  config:
+    name: "✔ Database services"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: database-services.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0006-000000000133
+  config:
+    name: "✔ Synthetic (service)"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: synthetic-service.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0007-000000000133
+  config:
+    name: "✔ Infrastructure"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+    template: infrastructure.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0008-000000000133
+  config:
+    name: "✔ SLO Simply Smarter"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+      applicationPerformanceSloId:
+        configId: aaaaaaaa-a003-a017-0000-000000000133
+        configType: slo
+        property: id
+        type: reference
+      serviceAvailabilitySloId:
+        configId: aaaaaaaa-a003-a017-0005-000000000133
+        configType: slo
+        property: id
+        type: reference
+      databaseSuccessRateSloId:
+        configId: aaaaaaaa-a003-a017-0006-000000000133
+        configType: slo
+        property: id
+        type: reference
+      browserMonitorAvailabilitySloId:
+        configId: aaaaaaaa-a003-a017-0003-000000000133
+        configType: slo
+        property: id
+        type: reference
+      servicePerformanceSloId:
+        configId: aaaaaaaa-a003-a017-0001-000000000133
+        configType: slo
+        property: id
+        type: reference
+      httpMonitorAvailabilitySloId:
+        configId: aaaaaaaa-a003-a017-0004-000000000133
+        configType: slo
+        property: id
+        type: reference
+      databasePerformanceSloId:
+        configId: aaaaaaaa-a003-a017-0002-000000000133
+        configType: slo
+        property: id
+        type: reference
+    template: slo-simply-smarter.json
+    skip: false
+  type:
+    api: dashboard
+- id: bbbbbbbb-b003-b017-0009-000000000133
+  config:
+    name: "✔ SLO Resource Optimization"
+    parameters:
+      simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0000-000000000133
+      services_dashboard_id: bbbbbbbb-b003-b017-0001-000000000133
+      user_experience_web_apps_dashboard_id: bbbbbbbb-b003-b017-0002-000000000133    
+      user_experience_mobile_apps_dashboard_id: bbbbbbbb-b003-b017-0003-000000000133
+      synthetic_browser_dashboard_id: bbbbbbbb-b003-b017-0004-000000000133
+      database_services_dashboard_id: bbbbbbbb-b003-b017-0005-000000000133
+      synthetic_service_dashboard_id: bbbbbbbb-b003-b017-0006-000000000133
+      infrastructure_dashboard_id: bbbbbbbb-b003-b017-0007-000000000133
+      slo_simply_smarter_dashboard_id: bbbbbbbb-b003-b017-0008-000000000133
+      slo_resource_optimization_dashboard_id: bbbbbbbb-b003-b017-0009-000000000133
+      optimizationHostCPUUsageSloId:
+        configId: aaaaaaaa-a003-a017-0007-000000000133
+        configType: slo
+        property: id
+        type: reference
+      optimizationDiskUsageSloId:
+        configId: aaaaaaaa-a003-a017-0009-000000000133
+        configType: slo
+        property: id
+        type: reference
+      optimizationMemoryUsageSloId:
+        configId: aaaaaaaa-a003-a017-0008-000000000133
+        configType: slo
+        property: id
+        type: reference
+    template: slo-resource-optimization.json
+    skip: false
+  type:
+    api: dashboard
