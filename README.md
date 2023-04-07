@@ -106,7 +106,7 @@ Export variables
     
 Run the script 
 
-    python Deploy_and_Update_SLO_Simply_Smarter.py
+    python project_python\script\Deploy_and_Update_SLO_Simply_Smarter.py
     
 `windows powershell`  
 Export variables
@@ -116,7 +116,7 @@ Export variables
     
 Run the script 
 
-    python Deploy_and_Update_SLO_Simply_Smarter.py
+    python project_python\script\Deploy_and_Update_SLO_Simply_Smarter.py
 
  ---
  
