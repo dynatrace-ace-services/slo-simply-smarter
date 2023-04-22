@@ -1,96 +1,148 @@
-#  Dynatrace Lab - Monitoring as Code with Monaco v2
+# Dashboarding Dynatrace Simply Smarter
 
-![image](https://user-images.githubusercontent.com/40337213/145724361-890e0ba2-80ce-4b80-bd2b-ce8fd313180e.png)
+Fundamentals for deployment & configuration : [quickstart-ace-configurator](https://github.com/dynatrace-ace-services/quickstart-ace-configurator#readme)  
+ITSM integration & SLO Quality of Service : [itsm-integration-with-slo](https://github.com/dynatrace-ace-services/itsm-integration-with-slo#readme)  
+✅ Dashboarding Dynatrace Simply Smarter : [slo-simply-smarter](https://github.com/dynatrace-ace-services/slo-simply-smarter#readme)  
 
-In this lab you will import all the configurations with [monaco-V2](https://www.dynatrace.com/support/help/manage/configuration-as-code) : 
-We will use the lab VM as a tooling host and not as an application host.      
+Demo (internal only): [https://demo.live.dynatrace.com](https://demo.live.dynatrace.com/#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a003-a017-0000-000000000133)
 
-    application-web
-    app-detection-rule
-    management-zone
-    autotag
-    alerting-profile
-    notification
-    maintenance-window
-    host-naming
-    processgroup-naming
-    sevice-naming
-    dashboard
+![image](https://user-images.githubusercontent.com/40337213/217482105-8ad929a7-ce7a-4a7e-b0c4-026886851441.png)
+
+---
+---
+
+# Installation with `Monaco v2` (recommanded)
+
+## 1) Prerequisites installation
+
+- `Host Group` and `Management Zone` best practices with [Deployment best practices](https://github.com/dynatrace-ace-services/quickstart-ace-configurator)
+- `ITSM integration` best practices with [ITSM integration & SLO Quality of Service](https://github.com/dynatrace-ace-services/easy-itsm-integration/blob/main/Readme.md)
 
 
-## Step 0 : a tool host for monaco 
+## 2) Create an `APi-Token` with this scope :
 
-    Monaco can be installed anywhere, on your desktop : linux, windows, or on a tooling k8s, but never on an application host ! 
-    (except during this training)
+ - Read configuration 
+ - Write configuration
+ - Read SLO
+ - Write SLO
+ - Access problem and event feed, metrics, and topology
 
-## Step 1 : clone this git  
 
-    cd
-    git clone https://github.com/dynatrace-ace-services/dynatrace-lab
-    echo "end of step 1 - the lab is copy here home/dynatrace-lab"
-    
+## 3) Deploy with Monaco :
 
-## Step 2 : install monaco V2
+Documentation v2 [here](https://www.dynatrace.com/support/help/manage/configuration-as-code)  
+Example for linux 
 
-    cd;cd dynatrace-lab/
+`installation`  
+ 
+    git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
+    cd slo-simply-smarter
     curl -L https://github.com/Dynatrace/dynatrace-configuration-as-code/releases/latest/download/monaco-linux-amd64 -o monaco
     chmod +x monaco
-    echo "end of step 2 - monaco v2 is installed on your tool host"
-    
-## Step 3 : set the variables 
+       
+`variables`
 
-use this script to configure the variables on linux environment  
+    export DT_TENANT_URL=https://abcd123.live.dynatrace.com for saas or export MyTenant=https://domaine.com/e/abcd12234 for managed 
+    export DT_API_TOKEN=dt0c01.1234ABCD.XXXX
+       
+`deploy`
 
-    sh set_the_variables.sh
-
-open the file `lab_env.sh` to validate the variables manually
-    
-    cat lab_env.sh
-    
-set the variables on the local session
-    
-    . lab_env.sh
-    echo "end of step 3 - the variables have been setted on the local session"
-     
-## Step 4 : deploy with monaco 
-
-    cd;cd dynatrace-lab
     ./monaco deploy manifest.yaml
-    echo "end of step 4 - the configuration has been deployed on the tenant"
-
-## Step 5 (optional) : backup with monaco 
-
-    cd;cd dynatrace-lab
-    ./monaco download manifest.yaml -e MyEnv
-    echo "end of step 5 - the full configuration has been backuped"
-
-## Step 6 (optional) : redeploy specific management-zone configuration from backup json 
-
-download mz configuration 
-
-    cd;cd dynatrace-lab
-    ./monaco download manifest.yaml -e MyEnv -a management-zone -o backup-mz
     
-modifiy config.yaml for mz
+`result`
 
-    cd backup-mz/project_MyEnv/management-zone
-    nano config.yaml
+![image](https://user-images.githubusercontent.com/40337213/230628299-ace2a7f6-1555-4f18-b67d-3f184c83d9d0.png)
 
-keep only your id in this file (delete the ohers) and chnage the name like here : 
-    
-    delete the id section dfferent to your managament-zone
-    rename your management-zone
-    
-![image](https://user-images.githubusercontent.com/40337213/231716709-8bf56d5c-df96-4b50-95b2-9ed2a8a8f577.png)
+---
+---
+Other installations
 
+# Installation with `Python`
+
+## 1) Create an `APi-Token` with this scope :
+
+ - Read configuration 
+ - Write configuration
+ - Read SLO
+ - Write SLO
+
+## 2) Automatic installation and update with `python script`
+Prerequisite : python with requests installed 
  
- redeploy 
+    python 3.6+
+    pip install requests
     
-    cd;cd dynatrace-lab/backup-mz
-    ../monaco deploy manifest.yaml
-    
-On Dynatrace UI, verify that you have a new management zone : `My_easytravelXX`, similair to the previous one `easytravelxx`
++ internet acces [dahsboard template](https://github.com/JLLormeau/dynatrace_template_fr) & [slo template](https://github.com/dynatrace-ace-services/slo-simply-smarter/tree/main/SLOSimplySmarter/slo)
++ git clone on local host (linux or windows)
+  
+Download the script
 
-    echo "Go to the mz settings on the UI : "$DT_TENANT_URL"/ui/settings/builtin:management-zones"
-    echo "end of step 6 - a new mz has been deployed on Dynatrace "
+    git clone https://github.com/dynatrace-ace-services/slo-simply-smarter
+    cd slo-simply-smarter
+
+`Linux`  
+Export variables
+     
+    export MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
+    export MyToken=dt0c01.1234ABCD.XXXX
     
+Run the script 
+
+    python3 project_python/script/Deploy_and_Update_SLO_Simply_Smarter.py
+    
+   ![image](https://user-images.githubusercontent.com/40337213/211930107-21d89c32-55fa-4dfb-a36d-6ce6b1182ffb.png)  
+  
+ The `SLO simply smarter` is installed 
+ 
+ ---
+ 
+If you use windows, 
+
+`windows cmd`  
+Export variables
+     
+    set MyTenant=abcd123.live.dynatrace.com for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
+    set MyToken=dt0c01.1234ABCD.XXXX
+    
+Run the script 
+
+    python project_python\script\Deploy_and_Update_SLO_Simply_Smarter.py
+    
+`windows powershell`  
+Export variables
+     
+    $env:MyTenant="abcd123.live.dynatrace.com" for saas or export MyTenant=domaine.com/e/abcd12234 for managed (without https://...)
+    $env:MyToken="dt0c01.1234ABCD.XXXX"
+    
+Run the script 
+
+    python project_python\script\Deploy_and_Update_SLO_Simply_Smarter.py
+
+ ---
+ 
+# From Mission Control 
+Doesn't work from `Azure Bash`. Works fine from VM host : linux or windows.  
+
+Open the python script and add these two temporary variables `Cookie` & `X-CSRFToken` and run the script (in this case MyTenant=[clusterid]-managed.internal.dynatrace.com:8021/e/[tenantid])  :  
+ 
+    Cookie='xxx'
+    CSRFToken='xxx'
+    
+From the Mission Control, Dev Tools, collect the temporary X-CSRFToken and the full Cookie like that 
+![image](https://user-images.githubusercontent.com/40337213/213934116-62c8eb34-241b-44e3-870b-ea7b0a5b47be.png)
+
+and run the `python script` as described above.
+
+---
+---
+
+# Installation for `OffLine` environment
+
+1) offline insatallation   
+with `python script` and witout Internet access : click [here](https://github.com/JLLormeau/slo_simply_smarter_offline)
+
+2) manual installation  
+only if you can't install `SLO Simply Smarter` with python script or with Bizops, follow the process [here](https://github.com/JLLormeau/slo_simply_smarter_offline/blob/main/Import_Dynatrace_Simply_Smarter_for_OffLine_environment.pdf)
+
+
+
