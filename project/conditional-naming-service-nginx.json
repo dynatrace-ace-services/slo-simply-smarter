@@ -1,0 +1,38 @@
+{
+ "displayName": "{{ .name }}",
+ "enabled": true,
+ "metadata": {
+  "clusterVersion": "1.215.107.20210414-181420",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "nameFormat": "[{HostGroup:Name}] - Nginx:{Service:Port}",
+ "rules": [
+  {
+   "comparisonInfo": {
+    "negate": false,
+    "operator": "EQUALS",
+    "type": "SIMPLE_TECH",
+    "value": {
+     "type": "NGINX"
+    }
+   },
+   "key": {
+    "attribute": "SERVICE_TECHNOLOGY"
+   }
+  },
+  {
+   "comparisonInfo": {
+    "negate": false,
+    "operator": "EXISTS",
+    "type": "INTEGER",
+    "value": null
+   },
+   "key": {
+    "attribute": "SERVICE_PORT"
+   }
+  }
+ ],
+ "type": "SERVICE"
+}

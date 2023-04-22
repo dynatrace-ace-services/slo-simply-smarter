@@ -1,0 +1,22 @@
+{
+  "name": "{{ .name }}",
+  "rules": [
+    {
+      "enabled": true,
+      "valueFormat": "{HostGroup:Name}",
+      "valueNormalization": "Leave text as-is",
+      "type": "ME",
+      "attributeRule": {
+        "entityType": "PROCESS_GROUP",
+        "conditions": [
+          {
+            "key": "HOST_GROUP_NAME",
+            "operator": "EXISTS"
+          }
+        ],
+        "pgToHostPropagation": true,
+        "pgToServicePropagation": true
+      }
+    }
+  ]
+}

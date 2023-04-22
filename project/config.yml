@@ -1,0 +1,232 @@
+configs:
+# config for specific id
+## application web
+- id: config-id
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    template: application-web.json
+    skip: false
+  type:
+    api: application-web
+## application detection rule for domain easytravelxx-www (loadgen) and attached to the application web
+- id: config-id
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    parameters:
+      applicationId:
+        configId: config-id
+        configType: application-web
+        property: id
+        type: reference
+    template: application-detection-rule-loadgen.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:rum.web.app-detection
+      scope: environment
+## application detection rule for domain azure (real activity) and attached to the application web
+## disable for admin training
+- id: config-id-2
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    parameters:
+      applicationId:
+        configId: config-id
+        configType: application-web
+        property: id
+        type: reference
+      pattern:
+        name: DonainName
+        type: environment
+    template: application-detection-rule-azure.json
+    skip: true
+  type:
+    settings:
+      schema: builtin:rum.web.app-detection
+      scope: environment
+## alerting profile based on management zone
+- id: config-id
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    parameters:
+      mzid:
+        configId: config-id
+        configType: builtin:management-zones
+        property: id
+        type: reference
+    template: alerting-profile.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:alerting.profile
+      scope: environment
+## management zone (used by alerting profile, dashboard and maintenance window) 
+- id: config-id
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    template: management-zone.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:management-zones
+      scope: environment
+## problem notification based on alerting profile and need "Email" parameter 
+- id: config-id
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    parameters:
+      alertingprofileId:
+        configId: config-id
+        configType: builtin:alerting.profile
+        property: id
+        type: reference
+      email:
+        name: Email
+        type: environment
+    template: notification.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:problem.notifications
+      scope: environment
+configs:
+## http monitor
+## disable for admin training
+- id: config-id
+  config:
+    name:     
+      name: HostGroup
+      type: environment
+    parameters:
+      applicationId:
+        configId: config-id
+        configType: application-web
+        property: id
+        type: reference
+    template: http-monitor.json
+    skip: false
+  type:
+    api: synthetic-monitor
+## browser monitor
+## disable for admin training
+- id: config-id-2
+  config:
+    name: HostGroup
+    parameters:
+      applicationId:
+        configId: config-id
+        configType: application-web
+        property: id
+        type: reference
+    template: browser-monitor.json
+    skip: false
+  type:
+    api: synthetic-monitor
+## maintenance window based on management zone (disable notification on not business hours) 
+- id: config-id
+  config:
+    name:
+      name: HostGroup    
+      type: environment
+    parameters:
+      mzid:
+        configId: config-id
+        configType: builtin:management-zones
+        property: id
+        type: reference
+    template: maintenance-window.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:alerting.maintenance-window
+      scope: environment
+## special dashboard based on management zone and associated to Email user 
+- id: config-id
+  config:
+    name:
+      name: HostGroup
+      type: environment
+    parameters:
+      HostGroup:
+        name: HostGroup
+        type: environment
+      domain:
+        name: DonainName
+        type: environment
+      mzid:
+        configId: config-id
+        configType: builtin:management-zones
+        property: id
+        type: reference
+      owner:
+        name: Email
+        type: environment
+    template: dashboard.json
+    skip: false
+  type:
+    api: dashboard
+
+# generic config
+## auto tag "app" 
+- id: tag-env
+  config:
+    name: env
+    template: auto-tag-env.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:tags.auto-tagging
+      scope: environment
+## auto tag "env"
+- id: tag-app
+  config:
+    name: app
+    template: auto-tag-app.json
+    skip: false
+  type:
+    settings:
+      schema: builtin:tags.auto-tagging
+      scope: environment
+## renaming host 
+- id: host-naming
+  config:
+    name: host-naming
+    template: conditional-naming-host.json
+    skip: false
+  type:
+    api: conditional-naming-host
+## renaming process group 
+- id: processgroup-naming
+  config:
+    name: processgroup-naming
+    template: conditional-naming-processgroup.json
+    skip: false
+  type:
+    api: conditional-naming-processgroup
+## renaming service 
+- id: service-naming-nginx
+  config:
+    name: service-naming-nginx
+    template: conditional-naming-service-nginx.json
+    skip: false
+  type:
+    api: conditional-naming-service
+- id: service-naming
+  config:
+    name: service-naming
+    template: conditional-naming-service.json
+    skip: false
+  type:
+    api: conditional-naming-service

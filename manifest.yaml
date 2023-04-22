@@ -2,7 +2,7 @@
 manifestVersion: "1.0"
 
 projects:
-- name: project_monaco
+- name: project
 
 environmentGroups:
 - name: default

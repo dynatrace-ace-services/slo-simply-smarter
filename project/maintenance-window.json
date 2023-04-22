@@ -1,0 +1,31 @@
+{
+  "enabled": true,
+  "generalProperties": {
+    "name": "{{ .name }}",
+    "maintenanceType": "PLANNED",
+    "suppression": "DETECT_PROBLEMS_DONT_ALERT",
+    "disableSyntheticMonitorExecution": true
+  },
+  "schedule": {
+    "scheduleType": "DAILY",
+    "dailyRecurrence": {
+      "timeWindow": {
+        "startTime": "17:00:00",
+        "endTime": "09:00:00",
+        "timeZone": "Europe/Paris"
+      },
+      "recurrenceRange": {
+        "scheduleStartDate": "2021-04-18",
+        "scheduleEndDate": "2029-12-31"
+      }
+    }
+  },
+  "filters": [
+    {
+      "entityTags": [],
+      "managementZones": [
+        "{{ .mzid }}"
+      ]
+    }
+  ]
+}
