@@ -1,6 +1,6 @@
 # Dashboarding Dynatrace Simply Smarter
 
-Fundamentals for deployment & configuration :  [fundamentals](https://github.com/dynatrace-ace-services/fundamentals/blob/main/README.md)    
+Fundamentals for deployment & configuration :  [fundamentals](https://github.com/dynatrace-ace-services/fundamentals/blob/main/README.md) & [monaco example](https://github.com/dynatrace-ace-services/dynatrace-lab/tree/main/project)      
 ITSM integration & SLO Quality of Service : [itsm-integration-with-slo](https://github.com/dynatrace-ace-services/itsm-integration-with-slo#readme) & [monaco-template](https://github.com/dynatrace-ace-services/itsm-integration-with-slo/tree/main/monaco-template)    
 ✅ Dashboarding Dynatrace Simply Smarter : [slo-simply-smarter with monaco template](https://github.com/dynatrace-ace-services/slo-simply-smarter#readme)  
 
