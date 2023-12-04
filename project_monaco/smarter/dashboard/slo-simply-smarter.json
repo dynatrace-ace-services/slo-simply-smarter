@@ -3,15 +3,15 @@
     "configurationVersions": [
       7
     ],
-    "clusterVersion": "1.279.145.20231122-074223"
+    "clusterVersion": "1.280.121.20231202-122138"
   },
-  "id": "bbbbbbbb-a003-a017-0008-000000000133",
+  "id": "bbbbbbbb-b003-b017-0008-000000000133",
   "dashboardMetadata": {
     "name": "✔ SLO Simply Smarter",
     "shared": true,
-    "owner": "jean.louis.lormeau@dynatrace.com",
+    "owner": "smarter",
     "tags": [
-      "Configurator",
+      "smarter_V20230407",
       "smarter"
     ],
     "preset": true,
@@ -45,7 +45,7 @@
       },
       "tileFilter": {},
       "isAutoRefreshDisabled": false,
-      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-a003-a017-0000-000000000133)\n"
+      "markdown": "🏠 [Dynatrace: simply smarter](#dashboard;id=bbbbbbbb-b003-b017-0000-000000000133)\n"
     },
     {
       "name": "Markdown",
@@ -59,7 +59,7 @@
       },
       "tileFilter": {},
       "isAutoRefreshDisabled": false,
-      "markdown": "## [Application Performance web](#uemapplications;appsshown=webapps;sortmode=mode_apdex) \n\n---"
+      "markdown": "## [Application Performance](#uemapplications;appsshown=webapps;sortmode=mode_apdex)\n\n\n---"
     },
     {
       "name": "Application Performance",
@@ -77,7 +77,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .applicationPerformanceSloId }"
+        "817c37ed-5de2-36d8-8bbd-849e8b588549"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Application Performance;"
     },
@@ -96,7 +96,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .applicationPerformanceSloId }"
+        "817c37ed-5de2-36d8-8bbd-849e8b588549"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Application Performance;"
     },
@@ -115,7 +115,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .applicationPerformanceSloId }"
+        "817c37ed-5de2-36d8-8bbd-849e8b588549"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Application Performance;"
     },
@@ -164,7 +164,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 2052,
+        "left": 1026,
         "width": 988,
         "height": 76
       },
@@ -179,7 +179,7 @@
       "configured": true,
       "bounds": {
         "top": 342,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 152
       },
@@ -188,7 +188,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .servicePerformanceSloId }}"
+        "5f90eb01-7844-3998-8df4-f31731dc8bfd"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Service Performance;"
     },
@@ -198,7 +198,7 @@
       "configured": true,
       "bounds": {
         "top": 532,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 152
       },
@@ -207,7 +207,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .servicePerformanceSloId }}"
+        "5f90eb01-7844-3998-8df4-f31731dc8bfd"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Service Performance;"
     },
@@ -217,7 +217,7 @@
       "configured": true,
       "bounds": {
         "top": 722,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 152
       },
@@ -226,7 +226,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .servicePerformanceSloId }}"
+        "5f90eb01-7844-3998-8df4-f31731dc8bfd"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Service Performance;"
     },
@@ -236,7 +236,7 @@
       "configured": true,
       "bounds": {
         "top": 304,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 38
       },
@@ -249,7 +249,7 @@
       "configured": true,
       "bounds": {
         "top": 494,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 38
       },
@@ -262,7 +262,7 @@
       "configured": true,
       "bounds": {
         "top": 684,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 38
       },
@@ -274,8 +274,8 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 912,
-        "left": 1026,
+        "top": 1786,
+        "left": 0,
         "width": 988,
         "height": 76
       },
@@ -289,8 +289,8 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 1216,
-        "left": 1634,
+        "top": 2090,
+        "left": 608,
         "width": 380,
         "height": 152
       },
@@ -299,7 +299,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .httpMonitorAvailabilitySloId }}"
+        "3d62f98b-d2fd-3b61-9b49-791e4616f1ff"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Http Monitor Availability;"
     },
@@ -308,8 +308,8 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 1406,
-        "left": 1634,
+        "top": 2280,
+        "left": 608,
         "width": 380,
         "height": 152
       },
@@ -318,7 +318,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .httpMonitorAvailabilitySloId }}"
+        "3d62f98b-d2fd-3b61-9b49-791e4616f1ff"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Http Monitor Availability;"
     },
@@ -327,8 +327,8 @@
       "tileType": "SLO",
       "configured": true,
       "bounds": {
-        "top": 1596,
-        "left": 1634,
+        "top": 2470,
+        "left": 608,
         "width": 380,
         "height": 152
       },
@@ -337,7 +337,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .httpMonitorAvailabilitySloId }}"
+        "3d62f98b-d2fd-3b61-9b49-791e4616f1ff"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Http Monitor Availability;"
     },
@@ -346,8 +346,8 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1178,
-        "left": 1634,
+        "top": 2052,
+        "left": 608,
         "width": 380,
         "height": 38
       },
@@ -359,8 +359,8 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1368,
-        "left": 1634,
+        "top": 2242,
+        "left": 608,
         "width": 380,
         "height": 38
       },
@@ -372,8 +372,8 @@
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
-        "top": 1558,
-        "left": 1634,
+        "top": 2432,
+        "left": 608,
         "width": 380,
         "height": 38
       },
@@ -386,8 +386,8 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 988,
-        "left": 1634,
+        "top": 1862,
+        "left": 608,
         "width": 380,
         "height": 190
       },
@@ -496,8 +496,8 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 1406,
-        "left": 1026,
+        "top": 2280,
+        "left": 0,
         "width": 608,
         "height": 342
       },
@@ -590,7 +590,7 @@
       "configured": true,
       "bounds": {
         "top": 912,
-        "left": 2052,
+        "left": 1026,
         "width": 988,
         "height": 76
       },
@@ -605,7 +605,7 @@
       "configured": true,
       "bounds": {
         "top": 1216,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 152
       },
@@ -614,7 +614,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .serviceAvailabilitySloId }}"
+        "483ef7bc-e71c-3efd-b4d3-90390f99a9b7"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Service Availability;"
     },
@@ -624,7 +624,7 @@
       "configured": true,
       "bounds": {
         "top": 1406,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 152
       },
@@ -633,7 +633,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .serviceAvailabilitySloId }}"
+        "483ef7bc-e71c-3efd-b4d3-90390f99a9b7"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Service Availability;"
     },
@@ -643,7 +643,7 @@
       "configured": true,
       "bounds": {
         "top": 1596,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 152
       },
@@ -652,7 +652,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .serviceAvailabilitySloId }}"
+        "483ef7bc-e71c-3efd-b4d3-90390f99a9b7"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Service Availability;"
     },
@@ -662,7 +662,7 @@
       "configured": true,
       "bounds": {
         "top": 1178,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 38
       },
@@ -675,7 +675,7 @@
       "configured": true,
       "bounds": {
         "top": 1368,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 38
       },
@@ -688,7 +688,7 @@
       "configured": true,
       "bounds": {
         "top": 1558,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 38
       },
@@ -702,7 +702,7 @@
       "configured": true,
       "bounds": {
         "top": 1406,
-        "left": 2052,
+        "left": 1026,
         "width": 608,
         "height": 342
       },
@@ -808,7 +808,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .browserMonitorAvailabilitySloId }}"
+        "40990bf0-4e54-3ece-92d2-a9e9c7148a4e"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Browser Monitor Availability;"
     },
@@ -827,7 +827,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .browserMonitorAvailabilitySloId }}"
+        "40990bf0-4e54-3ece-92d2-a9e9c7148a4e"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Browser Monitor Availability;"
     },
@@ -846,7 +846,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .browserMonitorAvailabilitySloId }}"
+        "40990bf0-4e54-3ece-92d2-a9e9c7148a4e"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Browser Monitor Availability;"
     },
@@ -1205,7 +1205,7 @@
       "configured": true,
       "bounds": {
         "top": 342,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 152
       },
@@ -1214,7 +1214,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .databasePerformanceSloId }}"
+        "825c7646-53a0-37a6-bea8-135e7e153cf5"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Database Performance;"
     },
@@ -1224,7 +1224,7 @@
       "configured": true,
       "bounds": {
         "top": 532,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 152
       },
@@ -1233,7 +1233,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .databasePerformanceSloId }}"
+        "825c7646-53a0-37a6-bea8-135e7e153cf5"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Database Performance;"
     },
@@ -1243,7 +1243,7 @@
       "configured": true,
       "bounds": {
         "top": 722,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 152
       },
@@ -1252,7 +1252,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .databasePerformanceSloId }}"
+        "825c7646-53a0-37a6-bea8-135e7e153cf5"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Database Performance;"
     },
@@ -1262,7 +1262,7 @@
       "configured": true,
       "bounds": {
         "top": 304,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 38
       },
@@ -1275,7 +1275,7 @@
       "configured": true,
       "bounds": {
         "top": 494,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 38
       },
@@ -1288,7 +1288,7 @@
       "configured": true,
       "bounds": {
         "top": 684,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 38
       },
@@ -1301,7 +1301,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 3078,
+        "left": 2052,
         "width": 988,
         "height": 76
       },
@@ -1316,7 +1316,7 @@
       "configured": true,
       "bounds": {
         "top": 1216,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 152
       },
@@ -1325,7 +1325,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .databaseSuccessRateSloId }}"
+        "bdd82a63-1e2c-3b2e-860c-f7f0cc2d0375"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Database Success Rate;"
     },
@@ -1335,7 +1335,7 @@
       "configured": true,
       "bounds": {
         "top": 1406,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 152
       },
@@ -1344,7 +1344,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .databaseSuccessRateSloId }}"
+        "bdd82a63-1e2c-3b2e-860c-f7f0cc2d0375"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Database Success Rate;"
     },
@@ -1354,7 +1354,7 @@
       "configured": true,
       "bounds": {
         "top": 1596,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 152
       },
@@ -1363,7 +1363,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .databaseSuccessRateSloId }}"
+        "bdd82a63-1e2c-3b2e-860c-f7f0cc2d0375"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Database Success Rate;"
     },
@@ -1373,7 +1373,7 @@
       "configured": true,
       "bounds": {
         "top": 1178,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 38
       },
@@ -1386,7 +1386,7 @@
       "configured": true,
       "bounds": {
         "top": 1368,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 38
       },
@@ -1399,7 +1399,7 @@
       "configured": true,
       "bounds": {
         "top": 1558,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 38
       },
@@ -1412,7 +1412,7 @@
       "configured": true,
       "bounds": {
         "top": 912,
-        "left": 3078,
+        "left": 2052,
         "width": 988,
         "height": 76
       },
@@ -1427,7 +1427,7 @@
       "configured": true,
       "bounds": {
         "top": 988,
-        "left": 3078,
+        "left": 2052,
         "width": 608,
         "height": 418
       },
@@ -1520,7 +1520,7 @@
       "configured": true,
       "bounds": {
         "top": 1406,
-        "left": 3078,
+        "left": 2052,
         "width": 608,
         "height": 342
       },
@@ -1615,7 +1615,7 @@
       "configured": true,
       "bounds": {
         "top": 1786,
-        "left": 0,
+        "left": 1444,
         "width": 1596,
         "height": 76
       },
@@ -1629,7 +1629,7 @@
       "configured": true,
       "bounds": {
         "top": 1862,
-        "left": 0,
+        "left": 1444,
         "width": 950,
         "height": 760
       },
@@ -1643,7 +1643,7 @@
       "configured": true,
       "bounds": {
         "top": 2052,
-        "left": 950,
+        "left": 2394,
         "width": 304,
         "height": 152
       },
@@ -1657,7 +1657,7 @@
       "configured": true,
       "bounds": {
         "top": 1862,
-        "left": 950,
+        "left": 2394,
         "width": 646,
         "height": 190
       },
@@ -1672,7 +1672,7 @@
       "configured": true,
       "bounds": {
         "top": 114,
-        "left": 2052,
+        "left": 1026,
         "width": 608,
         "height": 418
       },
@@ -1768,7 +1768,7 @@
       "configured": true,
       "bounds": {
         "top": 114,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 190
       },
@@ -1872,7 +1872,7 @@
       "configured": true,
       "bounds": {
         "top": 988,
-        "left": 2052,
+        "left": 1026,
         "width": 608,
         "height": 418
       },
@@ -1964,8 +1964,8 @@
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
-        "top": 988,
-        "left": 1026,
+        "top": 1862,
+        "left": 0,
         "width": 608,
         "height": 418
       },
@@ -2058,7 +2058,7 @@
       "configured": true,
       "bounds": {
         "top": 114,
-        "left": 3078,
+        "left": 2052,
         "width": 608,
         "height": 418
       },
@@ -2154,7 +2154,7 @@
       "configured": true,
       "bounds": {
         "top": 114,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 190
       },
@@ -2259,7 +2259,7 @@
       "configured": true,
       "bounds": {
         "top": 988,
-        "left": 3686,
+        "left": 2660,
         "width": 380,
         "height": 190
       },
@@ -2454,7 +2454,7 @@
       ]
     },
     {
-      "name": "User action satisfied %",
+      "name": "User action Satisfied %",
       "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -2555,7 +2555,7 @@
       "configured": true,
       "bounds": {
         "top": 532,
-        "left": 2052,
+        "left": 1026,
         "width": 608,
         "height": 342
       },
@@ -2651,7 +2651,7 @@
       "configured": true,
       "bounds": {
         "top": 532,
-        "left": 3078,
+        "left": 2052,
         "width": 608,
         "height": 342
       },
@@ -2747,7 +2747,7 @@
       "configured": true,
       "bounds": {
         "top": 988,
-        "left": 2660,
+        "left": 1634,
         "width": 380,
         "height": 190
       },
@@ -2953,412 +2953,6 @@
       },
       "metricExpressions": [
         "resolution=Inf&(builtin:apps.web.actionCount.category:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
-      ]
-    },
-    {
-      "name": "Mobile or Custom Performance",
-      "nameSize": "",
-      "tileType": "SLO",
-      "configured": true,
-      "bounds": {
-        "top": 342,
-        "left": 1634,
-        "width": 380,
-        "height": 152
-      },
-      "tileFilter": {
-        "timeframe": "-1w"
-      },
-      "isAutoRefreshDisabled": false,
-      "assignedEntities": [
-        "{{ .mobileCustomPerformanceSloId }"
-      ],
-      "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Mobile or Custom Performance;"
-    },
-    {
-      "name": "Mobile or Custom Performance",
-      "tileType": "SLO",
-      "configured": true,
-      "bounds": {
-        "top": 532,
-        "left": 1634,
-        "width": 380,
-        "height": 152
-      },
-      "tileFilter": {
-        "timeframe": "-1M"
-      },
-      "isAutoRefreshDisabled": false,
-      "assignedEntities": [
-        "{{ .mobileCustomPerformanceSloId }"
-      ],
-      "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Mobile or Custom Performance;"
-    },
-    {
-      "name": "Mobile or Custom Performance",
-      "tileType": "SLO",
-      "configured": true,
-      "bounds": {
-        "top": 722,
-        "left": 1634,
-        "width": 380,
-        "height": 152
-      },
-      "tileFilter": {
-        "timeframe": "-1y"
-      },
-      "isAutoRefreshDisabled": false,
-      "assignedEntities": [
-        "{{ .mobileCustomPerformanceSloId }"
-      ],
-      "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Mobile or Custom Performance;"
-    },
-    {
-      "name": "Last week",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 1634,
-        "width": 380,
-        "height": 38
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false
-    },
-    {
-      "name": "Last month",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 494,
-        "left": 1634,
-        "width": 380,
-        "height": 38
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false
-    },
-    {
-      "name": "Last year",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 684,
-        "left": 1634,
-        "width": 380,
-        "height": 38
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 38,
-        "left": 1026,
-        "width": 988,
-        "height": 76
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "markdown": "## Application Performance [mobile](#uemapplications;appsshown=mobileapps;sortmode=mode_apdex) & [custom](#uemapplications;appsshown=customapps;sortmode=mode_apdex)\n---"
-    },
-    {
-      "name": "Apdex",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 114,
-        "left": 1026,
-        "width": 608,
-        "height": 418
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "Data explorer results",
-      "queries": [
-        {
-          "id": "A",
-          "spaceAggregation": "AUTO",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.device_application"
-          ],
-          "metricSelector": "builtin:apps.other.uaCount.osAndApdex:splitby(\"dt.entity.device_application\"):sort(value(count,descending)):limit(20)",
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "HEATMAP",
-        "global": {
-          "hideLegend": true
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "properties": {
-              "color": "DEFAULT"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "DIMENSIONS",
-          "xAxisBuckets": 60,
-          "showLabels": false
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "value": 0.85,
-                "color": "#7dc540"
-              },
-              {
-                "value": 0.5,
-                "color": "#f5d30f"
-              },
-              {
-                "value": 0,
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false,
-          "hiddenColumns": []
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=null&(builtin:apps.other.uaCount.osAndApdex:splitBy(\"dt.entity.device_application\"):sort(value(count,descending)):limit(20)):limit(100):names"
-      ]
-    },
-    {
-      "name": "User action satisfied %",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 532,
-        "left": 1026,
-        "width": 608,
-        "height": 342
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "Data explorer results",
-      "queries": [
-        {
-          "id": "A",
-          "spaceAggregation": "AUTO",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.device_application"
-          ],
-          "metricSelector": "(builtin:apps.other.uaCount.osAndApdex:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.device_application\"))/(builtin:apps.other.uaCount.osAndApdex:splitBy(\"dt.entity.device_application\")):sort(value(avg,ascending)):limit(20)",
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TABLE",
-        "global": {
-          "hideLegend": true
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "unitTransform": "auto",
-            "valueFormat": "0,000",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "LINE",
-              "alias": "Apdex"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "value": 0.85,
-                "color": "#7dc540"
-              },
-              {
-                "value": 0.5,
-                "color": "#f5d30f"
-              },
-              {
-                "value": 0,
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "A",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": true,
-          "hiddenColumns": [
-            "A:dt.entity.application.name",
-            "A:dt.entity.device_application.name"
-          ]
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&((builtin:apps.other.uaCount.osAndApdex:filter(eq(\"Apdex category\",SATISFIED)):splitBy(\"dt.entity.device_application\"))/(builtin:apps.other.uaCount.osAndApdex:splitBy(\"dt.entity.device_application\")):sort(value(avg,ascending)):limit(20)):names"
-      ]
-    },
-    {
-      "name": "ApdexCategory (default 3 & 12 sec)",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 114,
-        "left": 1634,
-        "width": 380,
-        "height": 190
-      },
-      "tileFilter": {},
-      "isAutoRefreshDisabled": false,
-      "customName": "ApdexCategory",
-      "queries": [
-        {
-          "id": "A",
-          "spaceAggregation": "AUTO",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "Apdex category"
-          ],
-          "metricSelector": "builtin:apps.other.uaCount.osAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
-          "rate": "NONE",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TOP_LIST",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "A:",
-            "unitTransform": "auto",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "STACKED_AREA"
-            },
-            "seriesOverrides": [
-              {
-                "name": "SATISFIED",
-                "color": "#008000"
-              },
-              {
-                "name": "TOLERATING",
-                "color": "#f5d30f"
-              },
-              {
-                "name": "FRUSTRATED",
-                "color": "#FF0000"
-              }
-            ]
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {
-          "yAxis": "VALUE"
-        },
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false,
-          "hiddenColumns": []
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {
-          "showHive": true,
-          "showLegend": true,
-          "showLabels": false
-        }
-      },
-      "queriesSettings": {
-        "resolution": ""
-      },
-      "metricExpressions": [
-        "resolution=Inf&(builtin:apps.other.uaCount.osAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
       ]
     }
   ]
