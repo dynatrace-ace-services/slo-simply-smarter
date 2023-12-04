@@ -163,6 +163,11 @@ configs:
         configType: slo
         property: id
         type: reference
+      mobileCustomPerformanceSloId:
+        configId: aaaaaaaa-a003-a017-0010-000000000133
+        configType: slo
+        property: id
+        type: reference
       serviceAvailabilitySloId:
         configId: aaaaaaaa-a003-a017-0005-000000000133
         configType: slo
