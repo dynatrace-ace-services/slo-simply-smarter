@@ -10,7 +10,7 @@ configs:
 - id: aaaaaaaa-a003-a017-0010-000000000133
   config:
     name: Smarter - Mobile or Custom App Performance
-    template: Smarter-ApplicationPerformance.json
+    template: Smarter-OtherApplicationPerformance.json
     skip: false
   type:
     api: slo
