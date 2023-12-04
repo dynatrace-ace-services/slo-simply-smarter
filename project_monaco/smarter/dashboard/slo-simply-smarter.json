@@ -2965,7 +2965,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .applicationPerformanceSloId }}"
+        "{{ .mobileCustomPerformanceSloId }}"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Application Performance;"
     },
@@ -2984,7 +2984,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .applicationPerformanceSloId }}"
+        "{{ .mobileCustomPerformanceSloId }}"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Application Performance;"
     },
@@ -3003,7 +3003,7 @@
       },
       "isAutoRefreshDisabled": false,
       "assignedEntities": [
-        "{{ .applicationPerformanceSloId }}"
+        "{{ .mobileCustomPerformanceSloId }}"
       ],
       "metric": "METRICS=true;LEGEND=true;PROBLEMS=true;decimals=1;customTitle=Smarter - Application Performance;"
     },
