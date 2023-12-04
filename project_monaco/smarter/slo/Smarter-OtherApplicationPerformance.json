@@ -10,7 +10,7 @@
  "evaluationType": "AGGREGATE",
  "filter": "",
  "metricDenominator": "",
- "metricExpression": "(100)*(builtin:apps.other.uaCount.osAndApdex:filter(eq(Apdex category,SATISF1IED)):splitBy())/(builtin:apps.other.uaCount.osAndApdex:splitBy())1",
+ "metricExpression": "(100)*(builtin:apps.other.uaCount.osAndApdex:filter(eq(Apdex category,SATISFIED)):splitBy())/(builtin:apps.other.uaCount.osAndApdex:splitBy())",
  "metricKey": "func:slo.smarter___other_application_performance",
  "metricNumerator": "",
  "metricRate": "",
