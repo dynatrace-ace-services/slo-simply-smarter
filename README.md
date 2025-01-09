@@ -1,7 +1,8 @@
 # Dashboarding Dynatrace Simply Smarter
 
 ## Latest Dynatrace
-Click [here]([url](https://github.com/dynatrace-ace-services/simply_smarter_4_platform)) for Platform (Grail)
+Simply Smarter for Platform (Grail) [here]([url](https://github.com/dynatrace-ace-services/simply_smarter_4_platform))  
+based on segments 
 
 ## Classic  
 
