@@ -209,7 +209,7 @@ def updateSLO(TENANT, TOKEN):
     print('\nupdate slo')
     for slo in SLO_target:
         url='https://raw.githubusercontent.com/dynatrace-ace-services/slo-simply-smarter/main/project_monaco/smarter/slo/'+slo.replace(' ','')+'.json'
-        req = requests.get(url)
+        req = requests.get(url,verify=False)
         payload=req.json()
         payload['name']=slo
         payload['id']=SLO_target[slo]
@@ -226,7 +226,7 @@ def generateSLO(TENANT, TOKEN):
     for slo in SLO_target:
         if SLO_target[slo] == '':
             url='https://raw.githubusercontent.com/dynatrace-ace-services/slo-simply-smarter/main/project_monaco/smarter/slo/'+slo.replace(' ','')+'.json'
-            req = requests.get(url)
+            req = requests.get(url,verify=False)
             payload=req.json()
             payload['name']=slo
         
@@ -246,7 +246,7 @@ def generateDashboard(TENANT, TOKEN):
     for dashboard in Dashboard_target:
         if Dashboard_target[dashboard] == '':
             url='https://raw.githubusercontent.com/JLLormeau/dynatrace_template_fr/master/'+Dashboard_mapping_name[dashboard]
-            req = requests.get(url)
+            req = requests.get(url,verify=False)
             payload=req.json()
             payload['dashboardMetadata']['owner']=owner
             del payload['id']
@@ -256,7 +256,7 @@ def generateDashboard(TENANT, TOKEN):
             result=postDynatraceAPI(uri, payload)
         else:
             url='https://raw.githubusercontent.com/JLLormeau/dynatrace_template_fr/master/'+Dashboard_mapping_name[dashboard]
-            req = requests.get(url)
+            req = requests.get(url,verify=False)
             payload=req.json()
             payload['dashboardMetadata']['owner']=owner
             payload['id']=Dashboard_target[dashboard]
