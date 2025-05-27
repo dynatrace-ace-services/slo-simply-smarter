@@ -1,5 +1,11 @@
 # Dashboarding Dynatrace Simply Smarter
 
+## Latest Dynatrace
+Simply Smarter for Platform (Grail) [here](https://github.com/dynatrace-ace-services/simply_smarter_4_platform)  
+based on segments 
+
+## Classic  
+
 Fundamentals for deployment & configuration :  [fundamentals](https://github.com/dynatrace-ace-services/fundamentals/#readme) & [monaco example](https://github.com/dynatrace-ace-services/dynatrace-lab/tree/main/project)      
 ITSM integration & SLO Quality of Service : [itsm-integration-with-slo](https://github.com/dynatrace-ace-services/itsm-integration-with-slo#readme) & [monaco-template](https://github.com/dynatrace-ace-services/itsm-integration-with-slo/tree/main/monaco-template#readme)    
 ✅ Dashboarding Dynatrace Simply Smarter : [slo-simply-smarter with monaco template](https://github.com/dynatrace-ace-services/slo-simply-smarter#readme)  
